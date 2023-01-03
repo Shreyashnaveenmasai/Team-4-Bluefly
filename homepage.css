@@ -1,0 +1,170 @@
+
+/* Universal CSS Properties */
+* {
+    font-family: sans-serif;
+}
+
+
+/* CSS Properties for Header */
+#header {
+    width: 100%;
+    height: 215px;
+    left: 0;
+    top: 0;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    position: fixed;
+}
+
+#banner {
+    width: 100%;
+    height: 42%;
+    display: flex;
+    background: rgb(203, 35, 35);
+    line-height: 8px;
+    box-shadow: 0px 0px 0px 0px rgb(50 50 50 / 75%);
+}
+
+#banner > div:nth-child(1) {
+    width: 20%;
+    height: 90%;
+    margin: auto auto auto 240px;
+}
+
+#banner > div:nth-child(2) {
+    width: 30%;
+    height: 90%;
+    margin: auto;
+    text-align: center;
+    color: white;
+}
+
+#banner > div:nth-child(3) {
+    width: 5%;
+    height: 90%;
+    margin: auto 620px auto auto;
+}
+
+#banner > div:nth-child(3) > div {
+    width: 100%;
+    height: 14px;
+    padding-top: 10px;
+    margin: auto;
+    margin-top: 13px;
+    border: 8px solid white;
+    text-align: center;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#navbar {
+    width: 100%;
+    height: 58%;
+    background-color: white;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+#navbar > div {
+    display: flex;
+}
+
+#navbar > #top > div:nth-child(1) {
+    width: 10%;
+    margin-top: 1%;
+    margin-left: 41%;
+    height: 40%;
+}
+
+#navbar > #top > div:nth-child(2) {
+    margin-left: 500px;
+    margin-top: 28px;
+    width: 10%;
+    height: 20%;
+    display: flex;
+    gap: 23px;
+
+}
+
+#navbar > #top > div:nth-child(1) > img {
+    width: 100%;
+}
+
+
+#navbar > #top > div:nth-child(2) > button {
+    width: 10%;
+    height: 60%;
+    background: none;
+    border: none;
+}
+
+
+#navbar > #top > div:nth-child(2) > img {
+    width: 10%;
+    height: 80%;
+}
+
+#navbar > #mid {
+    width: 70%;
+    height: 40%;
+    gap: 3%;
+    margin: auto;
+}
+
+#mid > p {
+    font-size: 15px;
+}
+
+/* Custom Hover Underline animation */
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: black;
+}
+  
+.hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+  
+.hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+
+/* CSS Properties for main content */
+#content {
+    height: 500px;
+    margin: 215px -9px 0px -9px;
+    background: antiquewhite;
+}
+
+
+/* CSS Properties for Footer */
+#footer {
+    height: 1000px;
+    margin: 0px -9px -9px -9px;
+    background: aquamarine;
+}
+
+#footer > div:nth-child(1) {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    background: white;
+}
+
+#footer > div:nth-child(2) {
+    height: 50%;
+    width: 100%;
+    background: #e6e6e6;
+}

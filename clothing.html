@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Clothing</title>
+    <link rel="stylesheet" href="clothing.css">
+    <link rel="stylesheet" href="index.css">
+    <style>
+        .pvc{
+                padding: 20px;
+                margin: 0px 20% 30px 20%;
+            }
+            h1{
+                box-sizing: border-box;
+                 cursor: auto;
+                  font-family: Tiemann, serif; font-size: 2.375em; 
+                  font-weight: 400;
+                   letter-spacing: 0em;
+                    line-height: 1; 
+                    margin: 0px 0px 15px; 
+                text-transform: uppercase; 
+                user-select: text;
+                text-align: center;
+            }
+            .shopify-contact-us{
+                background-color: white;
+                 box-sizing: border-box; 
+                font-family: Futura, sans-serif; 
+                font-size: 16px; letter-spacing: 0.4px;
+                 user-select: text;
+            }
+            span{
+                box-sizing: border-box; 
+                
+            }
+            p{
+                box-sizing: border-box; 
+                cursor: auto;
+                margin: 0px 0px 25px; 
+                user-select: text;
+            }
+            .child{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+         
+        }
+        .child  div{
+            margin: 10px;
+            height: 80%;
+            text-align: center;
+        }
+        img{
+            width: 100%;
+            margin: auto;
+            height: 267px;
+        }
+
+
+      @media only screen and (min-width: 0px) and (max-width: 768px) {
+        .child{
+                  grid-template-columns: repeat(1,1fr);
+                  
+            } 
+      }
+
+      h3{
+        box-sizing: border-box;
+         cursor: auto;
+          font-family: Tiemann, serif; font-size: 1.5em; 
+          font-weight: 400; letter-spacing: 0em;
+         line-height: 1; 
+         margin: 0px 0px 15px; 
+         text-transform: uppercase; 
+         user-select: text !important;
+      }
+
+      p{
+        box-sizing: border-box;
+         cursor: auto;
+          margin: 15px;
+        user-select: text !important;
+      }
+
+      a{
+        appearance: none;
+         background: 150% 45% transparent;
+          border-radius: 0px; border: 1px solid rgb(232, 232, 225);
+           box-sizing: border-box; 
+           color: black;
+            cursor: pointer;
+            display: inline-block; 
+            font-size: 12px; 
+            letter-spacing: 0.3em; 
+            line-height: 1.42; 
+            margin: 0px;
+             min-width: 90px;
+              padding: 8px 14px; 
+        text-decoration-line: none; 
+        text-transform: uppercase; 
+        user-select: none; 
+        vertical-align: middle; 
+        width: auto;
+      }   
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="topnav">
+            <img src="img/topimg.jpg" alt="">
+        </div>
+        <div class="header">
+            <div>
+                <a href="index.html"><img src="img/logoimg.webp" alt=""></a>
+            </div>
+            <div class="headericon">
+                <i class="fa-solid fa-magnifying-glass"></i><input type="search" placeholder="SEARCH" aria-label="Search through site content">
+                <a class="prfl"><i class="fa-regular fa-user"></i></a>
+                <a href="../Cart/cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+            </div>
+        </div>
+          <div id="navbarlink">
+            <div class="navbtn1"><button id="fade"><a id="cloth" class="navbar_a">CLOTHING</a></button></div>
+            <div id="shofade" ><a href="clothing.html" class="navbar_a">SHOES</a></div>
+            <div><a class="navbar_a">HANDBAGS & ACCESSORIES</a></div>
+            <div><a class="navbar_a">DESIGNERS</a></div>
+            <div><a class="navbar_a">SUNGLASSES</a></div>
+            <div><a class="navbar_a">JEWELLERY & WATCHES</a></div>
+            <div><a class="navbar_a">UNDER $ 50</a></div>
+            <div><a class="navbar_a">BEAUTY</a></div>
+        </div>
+        <div class="navbar_c"><a class="">CLEARANCE</a></div>
+        <div id="cloth_hover">
+             <div id="first" class="one">
+                <div>
+                    <img src="img/navlinkwomen.avif" alt="">
+                    <h5><a href="">DRESSES</a></h5>
+                    <p><a href="">UP TO 80% OFF</a></p>
+                    <br/>
+                </div>
+            </div>
+            <div id="first" class="one">
+                <P>WOMEN'S CLOTHING</P>
+                <P><a href="">Active Wear</a></P>
+                <P><a href="">tops</a></P>
+                <p><a href="">shorts</a></p>
+                <p><a href="">sharara suits</a></p>
+                <p><a href="">skirts</a></p>
+                <p><a href="">jumpsuits</a></p>
+                <p><a href="">sleapwear</a></p>
+            </div>
+            <div id="first" class="one"></div>
+            <div id="first" class="one">
+                <p>MEN'S CLOTHING</p>
+                <p><a href="">Active Wear</a></p>
+                <p><a href="">coats and dresses</a></p>
+                <p><a href="">denims</a></p>
+                <p><a href="">shorts</a></p>
+                <P><a href="">pants</a></P>
+                <P><a href="">polo shirts</a></P>
+                <P><a href="">jeans</a></P>
+            </div>
+        </div>
+        <div id="shoes_hover">
+            <div id="first" class="one">
+                <P>WOMEN'S SHOES</P>
+                <P><a href="">shop all</a></P>
+                <P><a href="">Boots</a></P>
+                <p><a href="">Espadrilles</a></p>
+                <p><a href="">Pumps & heels</a></p>
+                <p><a href="">sandals</a></p>
+                <p><a href="">sneakers</a></p>
+                <p><a href="">Slippers</a></p>
+            </div>
+            <div id="first" class="one">
+                <p>MEN'S SHOES</p>
+                <p><a href="">shop all</a></p>
+                <p><a href="">Drivers, Loafers & Slip-Ons</a></p>
+                <p><a href="">flats</a></p>
+                <p><a href="">sneakers</a></p>
+                <P><a href="">slippers</a></P>
+                <P><a href="">Sandals & Flip Flops</a></P>
+                <P><a href="">boots</a></P>
+            </div>
+            <div id="first" class="one">
+                <p>MEN'S DESIGNERS</p>
+                <p><a href="">Balenciaga</a></p>
+                <p><a href="">Alexander McQueen</a></p>
+                <p><a href="">Alexander McQueen</a></p>
+                <p><a href="">Burberry</a></p>
+                <P><a href="">pants</a></P>
+                <P><a href="">Gucci</a></P>
+                <P><a href="">Burberry</a></P>
+            </div>
+            <div id="first" class="one">
+                <div>
+                    <img id="shover" src="img/shoeshover.webp" alt="">
+                    <h5><a href="">DRIVERS, LOAFERS & SLIP-ONS</a></h5>
+                    <p><a href="">UP TO 70% OFF</a></p>
+                    <br/>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="main">
+        <div id="left">
+            <div id="catagories">
+                <div>
+                    <h2>Categories</h2>
+                </div>
+                <div>
+                    <nav>
+                        <label for=""></label>
+                    </nav>
+                </div>
+            </div>
+
+
+
+            <div id="filter" >
+                <div>
+                    <h1>Filter</h1>
+                    <div>
+                        <div>
+                            <h2>COLLECTIONS</h2>
+                        </div>
+                        <div>
+                            <div>
+                                <div class="form">
+                                    <form action="">
+                                        <input type="search" name="" class="input" placeholder="Search... " >
+                                    </form>
+                                </div>
+                                <ul id="brandul">
+                                    <li>
+                                        <div>
+                                            <input type="checkbox" onclick="funclick1()"/>
+                                            <span>AUTUMN CASHMERE</span>
+                                            <span>(10142)</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <input type="checkbox" onclick="funclick2()"/>
+                                            <span>TAHARI</span>
+                                            <span>(3630)</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <input type="checkbox" onclick="funclick3()"/>
+                                            <span>TED BAKER</span>
+                                            <span>(4105)</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <input type="checkbox" onclick="funclick4()"/>
+                                            <span>REAL CASHMERE</span>
+                                            <span>(4690)</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <input type="checkbox">
+                                            <span>LEA & VIOLA</span>
+                                            <span>(3693)</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <input type="checkbox">
+                                            <span>CASHMERE COMPANY</span>
+                                            <span>(1025)</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <input type="checkbox">
+                                            <span>MICHAEL MICHAEL KORS</span>
+                                            <span>(326)</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h2>CATEGORY</h2>
+                </div>
+                <div>
+                    <div>
+                        <div>
+                            <form action="">
+                                <input type="search" class="input" placeholder="Search...">
+                            </form>
+                        </div>
+                        <ul id="manufacture-ul">
+                            <li>
+                                <div>
+                                    <input type="checkbox" onclick="funclick5()"/>
+                                    <span>Women's Dresses</span>
+                                    <span>(11315)</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <input type="checkbox" onclick="funclick6()"/>
+                                    <span>Women's Tops</span>
+                                    <span>(10721)</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <input type="checkbox" onclick="funclick7()"/>
+                                    <span>Women's Pants</span>
+                                    <span>(49)</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <input type="checkbox" onclick="funclick8()"/>
+                                    <span>Men's Suits</span>
+                                    <span>(212)</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <input type="checkbox"/>
+                                    <span>Men's Pants</span>
+                                    <span>(1017)</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div>
+                    <h2>SUB CATEGORY</h2>
+                </div>
+                <div>
+                    <div>
+                        <div>
+                            <form action="">
+                                <input type="search" class="input" placeholder="Search...">
+                            </form>
+                        </div>
+                        <ul id="catagories-ul">
+                            <li>
+                                <div>
+                                    <input type="checkbox">
+                                    <span>Women's Parkas</span>
+                                    <span>(361)</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <input type="checkbox">
+                                    <span>Women's Trench</span>
+                                    <span>(181)</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <input type="checkbox">
+                                    <span>Women's V-neck</span>
+                                    <span>(120)</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <input type="checkbox">
+                                    <span>Women's Turtlenecks</span>
+                                    <span>(146)</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <input type="checkbox">
+                                    <span>Women's Cropped Capris</span>
+                                    <span>(431)</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <h2>Price</h2>
+                </div>
+                <div>
+                    <input
+                      id="rangeElement"
+                      type="range"
+                      class="swipe-either-way"
+                      oninput="showVal(this.value)"
+                      value="0"
+                      mmin="0"
+                      max="100"
+                    />
+                    <span id="kl">0 </span>
+                </div>
+                <div>
+                    <h2>Availability</h2>
+                </div>
+                <div>
+                    <input type="checkbox">
+                    <span>Exclude out of stock (372)</span>
+                </div>
+            </div>
+            
+
+        </div>
+        <div id="right">
+            
+            <div>
+                <P>Showing <span>12</span> of <span>230</span> </P>
+                <div>
+                    <p>Sort by: </p>
+                    <button class="active">Popularity</button>
+                    <button onclick="HighToLow()">High to Low</button>
+                    <button onclick="LowToHigh()">Low To High</button>
+                    <button onclick="sortByDiscount()">Discount</button>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <h3>ALL PRODUCTS</h3>
+                </div>
+
+                <div id="clothing">
+                    <!-- product code from json -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr/>
+    <div id="container">
+        <div class="child">
+            <div>
+                    <img class="ig" alt="sample" src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/denim_400x.jpg" />
+                <br> <br> 
+                <h3 >UP TO 85% OFF THE DENIM SHOP FOR HIM &amp; HER</h3>
+                <p >From Hudson Jeans, Joe's Jeans, J Brand &amp; More</p>
+             
+                <a   href="" >SHOP DENIM</a>
+            </div>
+            <div>
+                <img alt="sample" src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/shutterstock_1112754335--RESIZED2_400x.jpg"/>
+                <br> <br> 
+                <h3 >UP TO 90% OFF TRENDING JUMPSUITS &amp; ROMPERS</h3>
+                <p >Must-Haves From Halston, BCBGMAXAZRIA, Iro &amp; More</p>
+                
+                <a   href="">SHOP JUMPSUITS</a>
+                
+
+            </div>
+            <div>
+                <img alt="sample" src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/shutterstock_210297940-resized_for_viewing_400x.jpg"/>
+                <br> <br> 
+                <h3 >UP TO 90% OFF WOMEN'S MUST-HAVE ACCESSORIES</h3>
+ 
+                <p >Shop Wallets, Belts, Hats, Sunglasses &amp; More</p>
+                
+                <a href="">SHOP WOMEN'S ACCESSORIES</a>
+                
+            </div>
+        </div>
+        
+
+    </div>
+    <footer>
+        <div class="footerbox">
+            <div class="footerboxinner">
+                <div class="fbox1">
+                    <div class="fbox1link">
+                        
+                        <h5>About us</h5>
+                       <a href="ContactUs.html">Contact Us</a>
+                       <a href="FrequentlyAskedQuestions.html">Frequently Asked Questions</a>
+                       <a href="Shipping&Returns.html">Shipping & Returns</a>
+                       <a href="Pre-OwnedGuide.html">Pre-Owned Guide</a>
+                    </div>
+                    <div class="fbox1link">
+                        
+                        <h5 id="fboxh"></h5> 
+                       <a href="SellonBluefly.html">Sell on Bluefly</a>
+                       <a href="PrivacyPolicy.html">Privacy Policy</a>
+                       <a href="Terms&Conditions.html">Terms & Conditions</a>
+                       <a href="info.html">Do not sell my personal information</a>
+                    </div>
+                </div>
+            <div class="fbox2">
+                <h2>SIGN UP AND SAVE</h2>
+                <h4>Subscribe to get exclusive offers on designer brands</h4>
+                <input type="text" placeholder="Enter your email"> <br>
+                <button><a href="">Subscribe</a></button>
+                <div class="socialicon">
+                <a href=""><span><i class="fa fa-instagram"></i></span></a>
+                <a href=""><span><i class="fa fa-facebook"></i></span></a>
+                </div>
+            </div>
+            </div>
+            <div class="footerlogo">
+                <a href=""><img src="img/logoimg.webp" alt=""></a>
+                <p>© 2022 Bluefly 1998-2020 BLUEFLY.COM OR ITS AFFILIATES ALL RIGHTS RESERVED.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
+<script src="clothing.js"></script>
+<script src="index.js"></script>
+<script src="header.js"></script>

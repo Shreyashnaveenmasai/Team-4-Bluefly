@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        #parent {
+            position: absolute;
+            margin-left: 50%;
+            transform: translateX(-50%);
+            border: 2px solid green;
+            padding: 10px;
+        }
+
+        #c1 {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 10px;
+        }
+        #c1>label{
+            font-size: 16px;
+            line-height: 25.6px;
+            letter-spacing: 1px;
+            /* border: 2px solid red; */
+            padding: 10px 0;
+        }
+
+        #sbtn {
+            width: 100%;
+            padding: 13px 20px;
+            margin-bottom: 15px;
+            background-color: #111111;
+            color: #ffffff;
+            border: none;
+        }
+
+        #hsign>h1 {
+            font-size: 38px;
+            font-family: "Times New Roman", Times, serif;
+            font-weight: 400;
+            text-align: center;
+        }
+        #em{
+            font-size: 12px;
+            line-height: 19.2px;
+            font-family: serif;
+            font-weight: 400;
+            /* color: red; */
+            margin-bottom: 100px;
+        }
+        #semail{
+            font-family: sans-serif 'Times New Roman', Times, serif;
+            font-size: 16px;
+            line-height: 25.6px;
+            font-weight: 400;
+            margin-top: 10px;
+            margin-bottom: 30px;
+            padding: 8px 10px;
+            width: 412px;
+        }
+        #signup_pass{
+            font-family: sans-serif 'Times New Roman', Times, serif;
+            font-size: 16px;
+            line-height: 25.6px;
+            font-weight: 400;
+            margin-top: 10px;
+            margin-bottom: 30px;
+            padding: 8px 10px;
+            width: 412px;
+        }
+        #createacc{
+            text-align: center;
+            font-size: 16px;
+            line-height: 25.6px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="parent">
+        <div id="chil">
+            <div id="hsign">
+                <h1>LOGIN</h1>
+            </div>
+            <form>
+                <div id="ersign">
+                    <h4></h4>
+                </div>
+                <label for="EMAIL" id="em" >EMAIL</label> <br />
+                <input type="email" id="semail" pattern="@xyz.com" size="30" required />
+                <div id="c1">
+                    <label for="">PASSWORD</label>
+                    <label for="" id="forget_pass">Forget password</label>
+                </div>
+                <input type="password" id="signup_pass" name="password" size="30" minlength="8" required />
+                <div>
+                    <button id="sbtn">SIGN IN</button>
+                </div>
+                <div id="createacc">
+                    <label for="">Create account</label>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
+<script></script>

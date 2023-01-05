@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <style>
+        #parent {
+            position: absolute;
+            margin-left: 50%;
+            transform: translateX(-50%);
+            border: 2px solid green;
+            padding: 10px;
+        }
+        h1{
+            font-size: 38px;
+            font-family: "Times New Roman", Times, serif;
+            font-weight: 400;
+            text-align: center;
+        }
+        #btn{
+            width: 100%;
+            padding: 13px 20px;
+            margin-bottom: 15px;
+            background-color: #111111;
+            color: #ffffff;
+            border: none;
+            font-family: sans-serif;
+            font-size: 13px;
+            line-height: 18.46px;
+            letter-spacing: 3.9px;
+        }
+        #name, #email, #lname, #password{
+            font-family: sans-serif 'Times New Roman', Times, serif;
+            font-size: 16px;
+            line-height: 25.6px;
+            font-weight: 400;
+            margin-top: 10px;
+            margin-bottom: 30px;
+            padding: 8px 10px;
+            width: 412px;
+            border: none;
+            box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        }
+        #l1, #l2, #l3, #l4{
+            font-size: 12px;
+            line-height: 19.2px;
+            font-family: serif;
+            font-weight: 400;
+            margin-bottom: 100px;
+        }
+        #checkbox{
+            text-align: center;
+            padding:20px 10px;
+            padding-top: 0;
+            /* justify-content: center; */
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+    <div>
+        <h1>CREATE ACCOUNT</h1>
+    </div>
+    <div>
+        <form action="">
+            <label for="" id="l1">FIRST NAME</label><br>
+            <input type="text" id="name"><br>
+            <label for="" id="l2">LAST NAME</label><br>
+            <input type="text" id="lname"><br>
+            <label for="" id="l3">EMAIL</label><br>
+            <input type="email" id="email"><br>
+            <label for="" id="l4">PASSWORD</label><br>
+            <input type="password" id="password"><br>
+            <div id="checkbox">
+            <input type="checkbox" name="">
+            <label for="">Subscribe to stay updated with new offers!</label>
+            </div>
+            <button id="btn">CREATE</button>
+        </form>
+    </div>
+    </div>
+</body>
+</html>

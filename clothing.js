@@ -126,11 +126,16 @@ function DisplayClothing(data){
         var image = document.createElement("img");
         image.setAttribute("src", ele.image_url);
 
+        var brandname=document.createElement("div");
+        brandname.setAttribute("id","brand");
+
+
         var brand = document.createElement("p");
         brand.innerText = ele.brand;
-
+        
         var name = document.createElement("h4");
         name.innerText = ele.name;
+        brandname.append(name);
         
         var mrp_price = document.createElement("h5");
         sub_mrp = document.createElement("span");
@@ -151,7 +156,7 @@ function DisplayClothing(data){
          button.innerText = "ADD TO CART";
          button.setAttribute("class", "cartbtn");
         button.addEventListener("click", function () {
-         addcart(ele,ele.id,i);
+         addcart(ele,i);
 
         
 });
@@ -161,7 +166,7 @@ div.append(
     discount,
     image,
     brand,
-    name,
+    brandname,
     mrp_price,
     best_price,
     
@@ -181,7 +186,7 @@ data.map((elem) => {
 var productIncart = JSON.parse(localStorage.getItem("newcart")) || [];
 console.log(productIncart);
 var cartdata = [];
-function addcart(element) {
+function addcart(element,i) {
     cartdata.push(element);
     localStorage.setItem("prodList", JSON.stringify(cartdata));
   if (productIncart.length == 0) {
@@ -496,3 +501,22 @@ function abc8(){
       }
     }
   };
+  document.querySelector("#sbn").addEventListener("change",sbn);
+    function sbn(){
+      event.preventDefault();
+      if(document.querySelector("#sbn").value=="lth" || document.querySelector("#sbn").value==""){
+        a.sort(function(a,b){
+          if(a.name < b.name) return -1;
+          if(a.name > b.name) return 1;
+          return 0;
+        })
+      }
+      if(document.querySelector("#sbn").value=="htl"){
+        a.sort(function(a,b){
+          if(a.name < b.name) return 1;
+          if(a.name > b.name) return -1;
+          return 0;
+        })
+      }
+      display(a);
+    }

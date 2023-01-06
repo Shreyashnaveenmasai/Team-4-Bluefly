@@ -18,6 +18,7 @@
         }
         #left{
             width: 35%;
+            background-color: rgb(250,250,250);
         }
         #right>a>img{
             max-width: 60%;
@@ -44,7 +45,7 @@
             font: 1em sans-serif;
         }
         #payoption{
-            border: 1px solid;
+            border: 1px solid black;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -52,33 +53,44 @@
             padding: 0;
             padding-bottom: 20px;
             margin: 0px 0px;
+
             
 
         }
         #imge{
             display: flex;
+            width: 100%;
             align-items: center;
-            justify-content: space-between;
+            justify-content: space-around;
+            /* background-color: blue; */
+            /* border: 100px solid blue; */
         }
         #imge>div>img{
             width: 100%;
+            height: 35px;
+            border-radius: 5px;
             /* padding: 5px; */
             /* margin: 10px; */
+        }
+        #imge>div{
+            border-radius: 5px;
+
         }
         #payoption>div{
             display: flex;
             gap: 20px;
+            /* border: 1px solid crimson; */
         }
-        #payoption>div>img{
+        /* #payoption>div>img{
             width: 100%;
             padding: 15px;
             border-radius: 5px;
             padding: 15px 50px;
             
-        }
+        } */
         #imge>div:first-child{
             background-color: rgb(90,49,244);
-            
+            height: 35px;
             color: white;
         }
         #imge>div:nth-child(2){
@@ -203,6 +215,170 @@
         }
 
 
+
+
+
+
+
+        #parent{
+            display: flex;
+            flex-direction: column;
+            margin: 50px;
+            margin-bottom: 10px;
+            background-color: rgb(250,250,250);
+        }
+        .img{
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
+            background-color: white;
+            border-radius: 10px;
+            /* border: 1px solid black; */
+        }
+        .box{
+            display: flex;
+            /* width: 10%; */
+            justify-content:flex-start;
+            /* border-radius: 1px; */
+
+        }
+        .btn1{
+            background-color: white;
+            margin: 20px;
+        }
+        .btn1:hover{
+            background-color: black;
+            color: white;
+        }
+        .btn2:hover{
+            background-color: black;
+            color: white;
+        }
+        
+        .btn2{
+            background-color: white;
+            margin: 20px;
+        }
+        
+        .div3c{
+            display: flex;
+            /* width: 200px; */
+            /* flex-direction:column; */
+            /* margin:30px; */
+            justify-content: space-between;
+            align-items: center;
+            /* margin-bottom: -25px; */
+            
+            /* background-color: rgb(180, 207, 23); */
+        }
+        #h44{
+            color: red;
+            text-align: center;
+        }
+        #div4{
+            gap:20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        #div4>input,#div4>button{
+            padding: 10px;
+        }
+        .div5{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-left: 10%;
+            /* flex-direction: column; */
+        }
+        .div6{
+            /* display: flex; */
+            /* width: 50%;
+            height: 50%;
+            margin-top: 30px; */
+            border: 1px solid;
+            border-radius: 10px;
+            margin-top: 10px;
+            margin-right: 10px;
+        }
+        #maindiv{
+            display: flex;
+            /* border-bottom: 1px solid; */
+            align-items: center;
+        }
+        .bargain{
+            display: flex;
+            justify-content: flex-end;
+            color: red;
+        }
+        .pricediv{
+            /* display: flex;
+            flex-direction: column; */
+        }
+        .str{
+            text-decoration: line-through;
+        }
+        .delete{
+            align-self:flex-start;
+            margin-left: 11.5%;
+            padding: 7px;
+            width: 7%;
+            color: red;
+        }
+        .delete:hover{
+            background-color: red;
+            color: white;
+        }
+        .top{
+            /* background-color: brown; */
+            margin: 250px;
+            text-align: center;
+            margin-bottom: 0px;
+        }
+        .top>button{
+            border: 0;
+            background-color: white;
+            border-bottom: 1px solid gray;
+        }
+        .top>button:hover{
+            border-bottom: 2px solid black;
+        }
+        .checkout{
+            align-self: center;
+            width: 30%;
+            margin: 10px;
+            padding: 13px 20px;
+            background-color: black;
+            color: white;
+            font-size: 13px;
+            cursor: pointer;
+            border: 1px solid transparent;
+            font-family: Futura,sans-serif;
+        }
+        .quantity-circle {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: rgb(128,128,128);
+            color: white;
+            font-size: 12px;
+            text-align: center;
+            position: absolute;
+            /* top: 0;
+            right: 0; */
+        }
+        .apy{
+            background-color: rgb(128,128,128);
+            color: white;
+            border-radius: 5px;
+        }
+        .texta{
+            padding: 100px;
+        }
+
+
+
     </style>
 </head>
 <body>
@@ -221,7 +397,7 @@
                 <p>Payment</p>
             </div>
             <div id="payoption">
-                <p>Express Checkout</p>
+                <div><p>Express Checkout</p></div>
                 <div id="imge">
                     <div><img src="https://cdn.shopify.com/shopifycloud/arrive_website/assets/marketing/what-shop-does/shop-pay-logo-466ffdd101b9ee6386dd665d1e8adf25f401583ec595820f048c2dc6f474d57e.svg" alt=""></div>
                     <div><img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjMyIiB2aWV3Qm94PSIwIDAgMTAwIDMyIiB4bWxucz0iaHR0cDomI3gyRjsmI3gyRjt3d3cudzMub3JnJiN4MkY7MjAwMCYjeDJGO3N2ZyIgcHJlc2VydmVBc3BlY3RSYXRpbz0ieE1pbllNaW4gbWVldCI+PHBhdGggZmlsbD0iIzAwMzA4NyIgZD0iTSAxMiA0LjkxNyBMIDQuMiA0LjkxNyBDIDMuNyA0LjkxNyAzLjIgNS4zMTcgMy4xIDUuODE3IEwgMCAyNS44MTcgQyAtMC4xIDI2LjIxNyAwLjIgMjYuNTE3IDAuNiAyNi41MTcgTCA0LjMgMjYuNTE3IEMgNC44IDI2LjUxNyA1LjMgMjYuMTE3IDUuNCAyNS42MTcgTCA2LjIgMjAuMjE3IEMgNi4zIDE5LjcxNyA2LjcgMTkuMzE3IDcuMyAxOS4zMTcgTCA5LjggMTkuMzE3IEMgMTQuOSAxOS4zMTcgMTcuOSAxNi44MTcgMTguNyAxMS45MTcgQyAxOSA5LjgxNyAxOC43IDguMTE3IDE3LjcgNi45MTcgQyAxNi42IDUuNjE3IDE0LjYgNC45MTcgMTIgNC45MTcgWiBNIDEyLjkgMTIuMjE3IEMgMTIuNSAxNS4wMTcgMTAuMyAxNS4wMTcgOC4zIDE1LjAxNyBMIDcuMSAxNS4wMTcgTCA3LjkgOS44MTcgQyA3LjkgOS41MTcgOC4yIDkuMzE3IDguNSA5LjMxNyBMIDkgOS4zMTcgQyAxMC40IDkuMzE3IDExLjcgOS4zMTcgMTIuNCAxMC4xMTcgQyAxMi45IDEwLjUxNyAxMy4xIDExLjIxNyAxMi45IDEyLjIxNyBaIj48L3BhdGg+PHBhdGggZmlsbD0iIzAwMzA4NyIgZD0iTSAzNS4yIDEyLjExNyBMIDMxLjUgMTIuMTE3IEMgMzEuMiAxMi4xMTcgMzAuOSAxMi4zMTcgMzAuOSAxMi42MTcgTCAzMC43IDEzLjYxNyBMIDMwLjQgMTMuMjE3IEMgMjkuNiAxMi4wMTcgMjcuOCAxMS42MTcgMjYgMTEuNjE3IEMgMjEuOSAxMS42MTcgMTguNCAxNC43MTcgMTcuNyAxOS4xMTcgQyAxNy4zIDIxLjMxNyAxNy44IDIzLjQxNyAxOS4xIDI0LjgxNyBDIDIwLjIgMjYuMTE3IDIxLjkgMjYuNzE3IDIzLjggMjYuNzE3IEMgMjcuMSAyNi43MTcgMjkgMjQuNjE3IDI5IDI0LjYxNyBMIDI4LjggMjUuNjE3IEMgMjguNyAyNi4wMTcgMjkgMjYuNDE3IDI5LjQgMjYuNDE3IEwgMzIuOCAyNi40MTcgQyAzMy4zIDI2LjQxNyAzMy44IDI2LjAxNyAzMy45IDI1LjUxNyBMIDM1LjkgMTIuNzE3IEMgMzYgMTIuNTE3IDM1LjYgMTIuMTE3IDM1LjIgMTIuMTE3IFogTSAzMC4xIDE5LjMxNyBDIDI5LjcgMjEuNDE3IDI4LjEgMjIuOTE3IDI1LjkgMjIuOTE3IEMgMjQuOCAyMi45MTcgMjQgMjIuNjE3IDIzLjQgMjEuOTE3IEMgMjIuOCAyMS4yMTcgMjIuNiAyMC4zMTcgMjIuOCAxOS4zMTcgQyAyMy4xIDE3LjIxNyAyNC45IDE1LjcxNyAyNyAxNS43MTcgQyAyOC4xIDE1LjcxNyAyOC45IDE2LjExNyAyOS41IDE2LjcxNyBDIDMwIDE3LjQxNyAzMC4yIDE4LjMxNyAzMC4xIDE5LjMxNyBaIj48L3BhdGg+PHBhdGggZmlsbD0iIzAwMzA4NyIgZD0iTSA1NS4xIDEyLjExNyBMIDUxLjQgMTIuMTE3IEMgNTEgMTIuMTE3IDUwLjcgMTIuMzE3IDUwLjUgMTIuNjE3IEwgNDUuMyAyMC4yMTcgTCA0My4xIDEyLjkxNyBDIDQzIDEyLjQxNyA0Mi41IDEyLjExNyA0Mi4xIDEyLjExNyBMIDM4LjQgMTIuMTE3IEMgMzggMTIuMTE3IDM3LjYgMTIuNTE3IDM3LjggMTMuMDE3IEwgNDEuOSAyNS4xMTcgTCAzOCAzMC41MTcgQyAzNy43IDMwLjkxNyAzOCAzMS41MTcgMzguNSAzMS41MTcgTCA0Mi4yIDMxLjUxNyBDIDQyLjYgMzEuNTE3IDQyLjkgMzEuMzE3IDQzLjEgMzEuMDE3IEwgNTUuNiAxMy4wMTcgQyA1NS45IDEyLjcxNyA1NS42IDEyLjExNyA1NS4xIDEyLjExNyBaIj48L3BhdGg+PHBhdGggZmlsbD0iIzAwOWNkZSIgZD0iTSA2Ny41IDQuOTE3IEwgNTkuNyA0LjkxNyBDIDU5LjIgNC45MTcgNTguNyA1LjMxNyA1OC42IDUuODE3IEwgNTUuNSAyNS43MTcgQyA1NS40IDI2LjExNyA1NS43IDI2LjQxNyA1Ni4xIDI2LjQxNyBMIDYwLjEgMjYuNDE3IEMgNjAuNSAyNi40MTcgNjAuOCAyNi4xMTcgNjAuOCAyNS44MTcgTCA2MS43IDIwLjExNyBDIDYxLjggMTkuNjE3IDYyLjIgMTkuMjE3IDYyLjggMTkuMjE3IEwgNjUuMyAxOS4yMTcgQyA3MC40IDE5LjIxNyA3My40IDE2LjcxNyA3NC4yIDExLjgxNyBDIDc0LjUgOS43MTcgNzQuMiA4LjAxNyA3My4yIDYuODE3IEMgNzIgNS42MTcgNzAuMSA0LjkxNyA2Ny41IDQuOTE3IFogTSA2OC40IDEyLjIxNyBDIDY4IDE1LjAxNyA2NS44IDE1LjAxNyA2My44IDE1LjAxNyBMIDYyLjYgMTUuMDE3IEwgNjMuNCA5LjgxNyBDIDYzLjQgOS41MTcgNjMuNyA5LjMxNyA2NCA5LjMxNyBMIDY0LjUgOS4zMTcgQyA2NS45IDkuMzE3IDY3LjIgOS4zMTcgNjcuOSAxMC4xMTcgQyA2OC40IDEwLjUxNyA2OC41IDExLjIxNyA2OC40IDEyLjIxNyBaIj48L3BhdGg+PHBhdGggZmlsbD0iIzAwOWNkZSIgZD0iTSA5MC43IDEyLjExNyBMIDg3IDEyLjExNyBDIDg2LjcgMTIuMTE3IDg2LjQgMTIuMzE3IDg2LjQgMTIuNjE3IEwgODYuMiAxMy42MTcgTCA4NS45IDEzLjIxNyBDIDg1LjEgMTIuMDE3IDgzLjMgMTEuNjE3IDgxLjUgMTEuNjE3IEMgNzcuNCAxMS42MTcgNzMuOSAxNC43MTcgNzMuMiAxOS4xMTcgQyA3Mi44IDIxLjMxNyA3My4zIDIzLjQxNyA3NC42IDI0LjgxNyBDIDc1LjcgMjYuMTE3IDc3LjQgMjYuNzE3IDc5LjMgMjYuNzE3IEMgODIuNiAyNi43MTcgODQuNSAyNC42MTcgODQuNSAyNC42MTcgTCA4NC4zIDI1LjYxNyBDIDg0LjIgMjYuMDE3IDg0LjUgMjYuNDE3IDg0LjkgMjYuNDE3IEwgODguMyAyNi40MTcgQyA4OC44IDI2LjQxNyA4OS4zIDI2LjAxNyA4OS40IDI1LjUxNyBMIDkxLjQgMTIuNzE3IEMgOTEuNCAxMi41MTcgOTEuMSAxMi4xMTcgOTAuNyAxMi4xMTcgWiBNIDg1LjUgMTkuMzE3IEMgODUuMSAyMS40MTcgODMuNSAyMi45MTcgODEuMyAyMi45MTcgQyA4MC4yIDIyLjkxNyA3OS40IDIyLjYxNyA3OC44IDIxLjkxNyBDIDc4LjIgMjEuMjE3IDc4IDIwLjMxNyA3OC4yIDE5LjMxNyBDIDc4LjUgMTcuMjE3IDgwLjMgMTUuNzE3IDgyLjQgMTUuNzE3IEMgODMuNSAxNS43MTcgODQuMyAxNi4xMTcgODQuOSAxNi43MTcgQyA4NS41IDE3LjQxNyA4NS43IDE4LjMxNyA4NS41IDE5LjMxNyBaIj48L3BhdGg+PHBhdGggZmlsbD0iIzAwOWNkZSIgZD0iTSA5NS4xIDUuNDE3IEwgOTEuOSAyNS43MTcgQyA5MS44IDI2LjExNyA5Mi4xIDI2LjQxNyA5Mi41IDI2LjQxNyBMIDk1LjcgMjYuNDE3IEMgOTYuMiAyNi40MTcgOTYuNyAyNi4wMTcgOTYuOCAyNS41MTcgTCAxMDAgNS42MTcgQyAxMDAuMSA1LjIxNyA5OS44IDQuOTE3IDk5LjQgNC45MTcgTCA5NS44IDQuOTE3IEMgOTUuNCA0LjkxNyA5NS4yIDUuMTE3IDk1LjEgNS40MTcgWiI+PC9wYXRoPjwvc3ZnPg" alt=""></div>
@@ -256,11 +432,11 @@
                         <option value="US">United States</option>
                     </select>
                     <div id="names">
-                        <input type="text" id="name" name="name" required pattern="[A-Za-z]{3,}" title="Please enter a valid First name (at least 3 letters)" placeholder="First name">
-                        <input type="text" id="name" name="name" required pattern="[A-Za-z]{3,}" title="Please enter a valid Last name (at least 3 letters)" placeholder="Last name">
+                        <input type="text" id="fname" name="name" required pattern="[A-Za-z]{3,}" title="Please enter a valid First name (at least 3 letters)" placeholder="First name">
+                        <input type="text" id="lname" name="name" required pattern="[A-Za-z]{3,}" title="Please enter a valid Last name (at least 3 letters)" placeholder="Last name">
                     </div>
                     <label for="housing">Add a house number if you have one</label>
-                    <input type="text" id="name" name="address" placeholder="Apartment, suite, etc. (optional)" required pattern="[A-Za-z]{3,}" title="Please enter a valid Address (at least 3 letters)" >
+                    <input type="text" id="aname" name="address" placeholder="Apartment, suite, etc. (optional)" required pattern="[A-Za-z]{3,}" title="Please enter a valid Address (at least 3 letters)" >
                     <div id="cities">
                         <input type="text" id="city" name="city"  required pattern="[A-Za-z]{3,}" title="Please enter a valid City (at least 3 letters)" placeholder="City">
                         <select id="state" name="state" required>
@@ -285,12 +461,12 @@
                             <option value="KY">Kentucky</option>
                             <option value="LA">Louisiana</option>
                         </select>
-                        <input type="text" id="zip" name="zip"  required pattern="[A-Za-z]{3,}" title="Please enter a Zip Code (at least 3 letters)" placeholder="Zip Code">
+                        <input type="number" id="zip" name="zip"  title="Please enter a Zip Code (at least 3 digit)" placeholder="Zip Code">
                     </div>
-                    <input type="number" name="quantity" min="1" max="10"  placeholder="Phone" pattern="[0-9]*" title="Please enter a number">
-                    <label for="sms">
-                        <input type="checkbox" id="sms" name="sms">
-                        SIGN UP FOR OUR SMS MESSAGES TO RECEIVE SPECIAL OFFERS, DISCOUNTS AND MORE!
+                    <input type="number" id="telp" name="quantity"   placeholder="Phone"  title="Please enter a number">
+                    <label for="sms" id="checkbox">
+                        <div><input type="checkbox" id="sms" name="sms"></div>
+                        <div><p>SIGN UP FOR OUR SMS MESSAGES TO RECEIVE SPECIAL OFFERS, DISCOUNTS AND MORE!</p></div>
                     </label>
                     <div id="phone-number-container" style="display: none;">
                         
@@ -302,41 +478,14 @@
                         <a href="cart.html"> < Return to cart</a>
                         <input type="submit" value="Continue to shipping">
                     </div>
-                    
-
-
-
-
                 </form>
-                <!-- <form>
-                    <input type="email" id="email" name="email" placeholder="Email" required><br>
-                    <label for="password">Password:</label><br>
-                    <input type="password" id="password" name="password" required minlength="8"><br>
-                  
-                    <label for="confirm_password">Confirm password:</label><br>
-                    <input type="password" id="confirm_password" name="confirm_password" required minlength="8" oninput="check(this)"><br>
-                  
-                    <label for="country">Country:</label><br>
-                    <select id="country" name="country" required>
-                      <option value="">Select a country</option>
-                      <option value="AF">Afghanistan</option>
-                      <option value="AX">Åland Islands</option>
-                      
-                    </select><br>
-                  
-                    <label for="terms">
-                      <input type="checkbox" id="terms" name="terms" required> I accept the terms and conditions
-                    </label><br>
-                  
-                    <input type="submit" value="Submit">
-                  </form> -->
-                  
-
             </div>
         </div>
         <hr>
         <div id="left">
-            <p>hi</p>
+            <div id="parent">
+
+            </div>
         </div>
     </div>
 </body>
@@ -346,4 +495,181 @@
     document.getElementById('sms').onchange = function() {
       document.getElementById('phone-number-container').style.display = this.checked ? 'block' : 'none';
     };
+    function refer(){
+        window.location="./index.html";
+    }
+    var dataArr=JSON.parse(localStorage.getItem("newcart")) || [];
+    if(dataArr.length===0){
+        document.querySelector("#parent").textContent="Cart is Empty Add Products In Cart";
+    }else{
+        var total=0;
+        var totalprice=0;
+        var totalitem=0;
+        displaydata(dataArr);
+        displayprice(dataArr);
+    }
+    
+    
+    function displaydata(list){
+        document.querySelector("#parent").textContent="";
+        list.map(function (elem,index){
+            var parent=document.querySelector("#parent");
+            var div=document.createElement("div");
+            div.setAttribute("id","maindiv");
+            var image=document.createElement("img");
+            image.setAttribute("class","img");
+            // var imge_url="https://cdn.shopify.com/s/files/1/0248/3473/6191/products/507185-w8187-1000__2_large.jpg?v=1672383522";
+            image.setAttribute("src",elem.image_url);
+            var title=document.createElement("h3");
+            title.textContent=elem.name;
+            var div7=document.createElement("div");
+            div7.setAttribute("class","div7");
+            div7.append(title);
+            var div6=document.createElement("div");
+            div6.setAttribute("class","div6");
+            // <div class="quantity-circle">
+            // <span id="quantity-value">1</span>
+            // </div>
+            var circle=document.createElement("div");
+            circle.setAttribute("class","quantity-circle");
+            var span=document.createElement("span");
+            span.setAttribute("id","quantity-value");
+            span.textContent = elem.qty;
+            circle.append(span);
+            div6.append(image,circle);
+            var price=document.createElement("p");
+            price.textContent="$"+elem.best_price;
+            var strprice=document.createElement("p");
+            strprice.setAttribute("class","str");
+            strprice.textContent="$"+elem.mrp_price;
+            var pricediv=document.createElement("div");
+            div.setAttribute("class","pricediv");
+            pricediv.append(price);
+            totalitem++;
+            totalprice+=elem.best_price*elem.qty;
+            var hr3=document.createElement("hr");
+            div.append(div6,div7,pricediv,hr3);
+            document.querySelector("#parent").append(div);
+        });
+    }
+    
+    function displayprice(list){
+
+            total=list.reduce(function (acc,curr){
+                return acc+curr.best_price*curr.qty;
+            },0);
+            var item=0;
+            list.forEach(element => {
+                item++;
+            });
+
+
+            var div4=document.createElement("div");
+            div4.setAttribute("id","div4");
+            var cou=document.createElement("h4");
+            cou.textContent="Enter Promo Code";
+            // cou.style.color="red";
+            cou.setAttribute("id","h44");
+            var textarea=document.createElement("input");
+            textarea.setAttribute("class","texta");
+            var coubtn=document.createElement("button");
+            coubtn.setAttribute("class","apy");
+            coubtn.textContent="Apply Promo";
+            coubtn.addEventListener("click",function(){
+                apply(textarea.value,total);
+            });
+            div4.append(textarea,coubtn);
+            document.querySelector("#parent").append(cou,div4);
+
+            var div3=document.createElement("div");
+            div3.setAttribute("class","div3c");
+            var p2=document.createElement("p");
+            p2.setAttribute("id","prices");
+            p2.textContent="SUBTOTAL";
+            var span=document.createElement("span");
+            span.setAttribute("id","pce")
+            span.append("$"+Math.round(total));
+            div3.append(p2,span);
+
+            var div5c=document.createElement("div");
+            div5c.setAttribute("class","div3c");
+            var p4=document.createElement("p");
+            p4.setAttribute("id","prices2");
+            p4.textContent="Shipping";
+            var p5=document.createElement("p");
+            p5.setAttribute("id","prices2");
+            p5.textContent="Free";
+            div5c.append(p4,p5);
+            var hr1=document.createElement("hr");
+            var hr2=document.createElement("hr");
+            var div4c=document.createElement("div");
+            div4c.setAttribute("class","div3c");
+            var p3=document.createElement("p");
+            p3.setAttribute("id","prices1");
+            p3.textContent="Estimated tax";
+            // var span1=document.createElement("span");
+            // span1.append("$"+Math.round(70));
+            var span1=document.createElement("p");
+            span1.textContent="$70";
+            div4c.append(p3,span1);
+            var pdiv=document.createElement("div");
+            pdiv.setAttribute("class","pdiv");
+            pdiv.append(hr1,div3,div5c,div4c,hr2);
+
+            var sub=document.createElement("div");
+            sub.setAttribute("class","div3c");
+            var pp=document.createElement("p");
+            pp.setAttribute("id","prices");
+            pp.textContent="TOTAL";
+            var span5=document.createElement("span");
+            span5.setAttribute("id","pcee");
+            span5.append("$"+Math.round(total+70));
+            sub.append(pp,span5);
+
+            // var p4=document.createElement("p");
+            // p4.textContent="Shipping, taxes, and discounts codes calculated at checkout.";
+            // var checkoutb=document.createElement("button");
+            // checkoutb.textContent="CHECK OUT";
+            // checkoutb.setAttribute("class","checkout");
+            // checkoutb.addEventListener("click",redirect);
+            document.querySelector("#parent").append(pdiv,sub);
+    }
+    function redirect(){
+        window.location="./payment.html";
+    }
+    function apply(data,total){
+        console.log(data,total);
+        if(data==="masai30"){
+            total=(total*30)/100;
+            document.querySelector("#pce").textContent="$"+Math.round(total);
+            document.querySelector("#pcee").textContent="$"+Math.round(total+70);
+            document.querySelector("#h44").textContent="Promo Applied";
+            console.log(total);
+
+        }else{
+            document.querySelector("#h44").textContent="Promo Does Not Exist";
+        }
+
+    }
+    document.querySelector("form").addEventListener("submit",Dataadd);
+    var formArr=JSON.parse(localStorage.getItem("info-list"))||[];
+    function Dataadd(){
+        event.preventDefault();
+        var email=document.querySelector("#email").value;
+        var country=document.querySelector("#country").value;
+        var fname=document.querySelector("#fname").value;
+        var lname=document.querySelector("#lname").value;
+        var aname=document.querySelector("#aname").value;
+        var city=document.querySelector("#city").value;
+        var state=document.querySelector("#state").value;
+        var zip=document.querySelector("#zip").value;
+        var telp=document.querySelector("#telp").value;
+        var formobj={email:email,country:country,fname:fname,lname:lname,aname:aname,city:city,state:state,zip:zip,telp:telp};
+        console.log(formobj);
+        formArr.push(formobj);
+        console.log(formArr);
+        localStorage.setItem("info-list",JSON.stringify(formArr));
+    }
+
+
 </script>

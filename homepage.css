@@ -82,6 +82,7 @@
 
 #navbar > #top > div:nth-child(1) > img {
     width: 100%;
+    height: 30px;
 }
 
 
@@ -105,11 +106,83 @@
     margin: auto;
 }
 
-#mid > p {
-    font-size: 15px;
+
+#mid > div > p {
+    font-size: 13px;
+    letter-spacing: 2px;
+    padding-bottom: 5px;
 }
 
-/* Custom Hover Underline animation */
+
+/* Drop-down menu and animations */
+.dropdown-menu {
+    background-color: white;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    top: 0;
+    visibility: hidden;
+    z-index: -99999;
+    display: flex;
+    gap: 5%;
+    justify-content: center;
+}
+  
+.dropdown-menu > div {
+    margin-top: 25px;
+}
+
+.dropdown-menu > div > h5 {
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.dropdown-menu > div >  p {
+    font-size: 12px;
+    padding-top: -3px;
+}
+
+.dropdown-menu > div > li > a {
+    color: #000;
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 30px;
+}
+
+.dropdown:hover .dropdown-menu {
+    transform: scale(1.015);
+    background: white;
+    opacity: 1;
+    visibility: visible;
+    top: 100%;
+    width: 100vw;
+    padding-bottom: 40px;
+    -webkit-transition: all .5s, background, 2s .5s linear;
+    transition: all .5s, background 2s .5s linear;
+    
+}
+
+.dropdown:hover .slideUp {
+    animation-name: text;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+
+@keyframes text {
+    from {
+      margin-top: 200px;
+      opacity: 0%;
+    }
+    to {
+      margin-top: 25px;
+      opacity: 100%;
+    }
+  }
+
+/* Hover Underline animation */
 .hover-underline-animation {
     display: inline-block;
     position: relative;
@@ -405,17 +478,6 @@
     padding-left: 10px;
     padding-right: 10px;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 

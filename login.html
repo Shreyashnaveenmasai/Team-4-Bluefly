@@ -2,10 +2,10 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create Account</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login or Signup</title>
     <link rel="stylesheet" href="homepage.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
@@ -13,34 +13,47 @@
             display: flex;
             justify-content: center;
             margin-top: 250px;
-            /* border: 2px solid green; */
             padding: 10px;
         }
 
-        h1 {
+        #c1 {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 10px;
+        }
+        #c1>label{
+            font-size: 16px;
+            line-height: 25.6px;
+            letter-spacing: 1px;
+            /* border: 2px solid red; */
+            padding: 10px 0;
+        }
+
+        #sbtn {
+            width: 100%;
+            padding: 13px 20px;
+            margin-bottom: 15px;
+            letter-spacing: 2.9px;
+            background-color: #111111;
+            color: #ffffff;
+            border: none;
+        }
+
+        #hsign>h1 {
             font-size: 38px;
             font-family: "Times New Roman", Times, serif;
             font-weight: 400;
             text-align: center;
         }
-
-        #btn {
-            width: 100%;
-            padding: 13px 20px;
-            margin-bottom: 15px;
-            background-color: #111111;
-            color: #ffffff;
-            border: none;
-            font-family: sans-serif;
-            font-size: 13px;
-            line-height: 18.46px;
-            letter-spacing: 3.9px;
+        #em{
+            font-size: 12px;
+            line-height: 19.2px;
+            font-family: serif;
+            font-weight: 400;
+            /* color: red; */
+            margin-bottom: 100px;
         }
-
-        #name,
-        #email,
-        #lname,
-        #password {
+        #semail, #signup_pass{
             font-family: sans-serif 'Times New Roman', Times, serif;
             font-size: 16px;
             line-height: 25.6px;
@@ -52,23 +65,21 @@
             border: none;
             box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
         }
-
-        #l1,
-        #l2,
-        #l3,
-        #l4 {
-            font-size: 12px;
-            line-height: 19.2px;
-            font-family: serif;
-            font-weight: 400;
-            margin-bottom: 100px;
-        }
-
-        #checkbox {
+        #createacc{
             text-align: center;
-            padding: 20px 10px;
-            padding-top: 0;
-            /* justify-content: center; */
+            font-size: 16px;
+            line-height: 25.6px;
+        }
+        #ersign>li{
+            color: #d02e2e;
+            background-color: #fff6f6;
+            font-size: 16px;
+            font-family: sans-serif;
+            line-height: 25.6px;
+            letter-spacing: 0.4px;
+            padding: 6px 12px;
+            margin-bottom: 15px;
+            box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
         }
     </style>
 </head>
@@ -77,14 +88,11 @@
     <div id="header">
 
         <div id="banner">
-
+            
             <div>
-                <h3>
-                    <pre> End &nbsp;of&nbsp; Year&nbsp; C L E A R E N C E </pre>
-                </h3>
+                <h3> <pre> End &nbsp;of&nbsp; Year&nbsp; C L E A R E N C E </pre> </h3>
                 <p style="font-size: 15px;"> EXTRA 15% OFF Select Styles </p>
-                <p style="font-size: 14px"> Featuring: Valentino,Balenciaga, Bottega Veneta, Stella McCartney & More
-                </p>
+                <p style="font-size: 14px"> Featuring: Valentino,Balenciaga, Bottega Veneta, Stella McCartney & More </p>
             </div>
 
             <!-- <div>
@@ -96,8 +104,7 @@
 
             <div id="top">
                 <div>
-                    <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/BLUEFLY-LOGO-11-20.png?v=1613183141"
-                        alt="Brand_logo">
+                    <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/BLUEFLY-LOGO-11-20.png?v=1613183141" alt="Brand_logo">
                 </div>
 
                 <div>
@@ -119,37 +126,38 @@
                 <p class="hover-underline-animation"> BEAUTY </p>
                 <p class="hover-underline-animation" style="color: red;"> CLEARENCE </p>
             </div>
-
+           
         </div>
-
+        
     </div>
     <div id="parent">
-        <div>
-            <div>
-                <h1>CREATE ACCOUNT</h1>
+        <div id="chil">
+            <div id="hsign">
+                <h1>LOGIN</h1>
             </div>
-            <div>
-                <form action="">
-                    <label for="" id="l1">FIRST NAME</label><br>
-                    <input type="text" id="name"><br>
-                    <label for="" id="l2">LAST NAME</label><br>
-                    <input type="text" id="lname"><br>
-                    <label for="" id="l3">EMAIL</label><br>
-                    <input type="email" id="email" ><br>
-                    <label for="" id="l4">PASSWORD</label><br>
-                    <input type="password" id="password" minlength="8" required><br>
-                    <div id="checkbox">
-                        <input type="checkbox" name="">
-                        <label for="">Subscribe to stay updated with new offers!</label>
-                    </div>
-                    <button id="btn">CREATE</button>
-                </form>
-            </div>
+            <form>
+                <div id="ersign">
+                    <!-- <h4></h4> -->
+                </div>
+                <label for="EMAIL" id="em" >EMAIL</label> <br />
+                <input type="email" id="semail" />
+                <div id="c1">
+                    <label for="">PASSWORD</label>
+                    <label for="" id="forget_pass">Forget password</label>
+                </div>
+                <input type="password" id="signup_pass" name="password"  />
+                <div>
+                    <button id="sbtn">SIGN IN</button>
+                </div>
+                <div id="createacc">
+                    <label id="newa">Create account</label>
+                </div>
+            </form>
         </div>
     </div>
     <div id="footer">
 
-        <div>
+        <div> 
             <div>
                 <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/denim_400x.jpg" alt="Denims">
                 <h2> UP TO 85% OFF THE DENIM SHOP FOR HIM & HER </h2>
@@ -158,16 +166,14 @@
             </div>
 
             <div>
-                <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/shutterstock_1112754335--RESIZED2_400x.jpg"
-                    alt="Jumpsuits">
+                <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/shutterstock_1112754335--RESIZED2_400x.jpg" alt="Jumpsuits">
                 <h2> UP TO 90% OFF TRENDING JUMPSUITS & ROMPERS </h2>
                 <p> Must-Haves From Halston, BCBGMAXAZRIA, Iro & More </p>
                 <button> SHOP JUMPSUITS </button>
             </div>
 
             <div>
-                <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/shutterstock_210297940-resized_for_viewing_400x.jpg"
-                    alt="Woman_Accesories">
+                <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/shutterstock_210297940-resized_for_viewing_400x.jpg" alt="Woman_Accesories">
                 <h2> UP TO 90% OFF WOMEN'S MUST-HAVE ACCESSORIES </h2>
                 <p> Shop Wallets, Belts, Hats, Sunglasses & More </p>
                 <button> SHOP WOMEN's ACCESORIES </button>
@@ -203,25 +209,22 @@
                         <input type="submit" value="Subscribe">
                     </form>
                     <div>
-                        <img src="https://img.icons8.com/sf-regular/512/instagram-new.png" alt="instagram"
-                            onclick="window.location.href = 'https://www.instagram.com/bluefly/'">
-                        <img style="height: 80%; margin-bottom: 5px;"
-                            src="https://img.icons8.com/material-two-tone/512/facebook-f--v2.png" alt="facebook"
-                            onclick="window.location.href = 'https://www.facebook.com/Bluefly/'">
+                        <img src="https://img.icons8.com/sf-regular/512/instagram-new.png" alt="instagram" onclick="window.location.href = 'https://www.instagram.com/bluefly/'">
+                        <img style="height: 80%; margin-bottom: 5px;" src="https://img.icons8.com/material-two-tone/512/facebook-f--v2.png" alt="facebook" onclick="window.location.href = 'https://www.facebook.com/Bluefly/'">
                     </div>
                 </div>
 
             </div>
 
             <div id="down">
-                <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/Untitled_2_.png_5_x104@2x.png?v=1620852820"
-                    alt="Brand_logo">
+                <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/Untitled_2_.png_5_x104@2x.png?v=1620852820" alt="Brand_logo">
                 <p> © 2023 Bluefly 1998-2020 BLUEFLY.COM OR ITS AFFILIATES ALL RIGHTS RESERVED. </p>
             </div>
         </div>
-
+        
     </div>
 </body>
-<script src="account.js"></script>
 
 </html>
+
+<script src="signup.js"></script>

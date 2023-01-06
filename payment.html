@@ -4,9 +4,130 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Payment Page</title>
+    <title>Information Page</title>
+    <link rel="stylesheet" href="payment.css">
 </head>
 <body>
-    
+    <div id="full">
+        <div id="right">
+            <a href="">
+                <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/BLUEFLY-LOGO-11-20.png?223864" alt="">
+            </a>
+            <div id="items">
+                <a href="./cart.html">Cart</a>
+                <p>></p>
+                <a href="./information.html"><p>Information</p></a>
+                <p>></p>
+                <a href="./information.html"><p>Shipping</p></a>
+                <p>></p>
+                <p>Payment</p>
+            </div>
+            <div id="contact">
+                <div id="ssemail">
+                    <div>Contact</div>
+                    <div>
+                        <span id="semail"></span>
+                    </div>
+                    <div>
+                        <a href="information.html">Change</a>
+                    </div>
+                </div>
+                <div><hr></div>
+                <div id="ssdata">
+                    <div>Ship to</div>
+                    <div>
+                        <span id="sdata"></span>
+                    </div>
+                    <div>
+                        <a href="information.html">Change</a>
+                    </div>
+                </div>
+                <div><hr></div>
+                <div id="fee">
+                    <div>Method</div>
+                    <div>
+                        <span id="fdata"></span>
+                    </div>
+                    <div>
+                        <a href="information.html">Change</a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h2>
+                   Payment
+                </h2>
+                <h3>
+                    All transactions are secure and encrypted.
+                </h3>
+            </div>
+            <div id="payments">
+                <div class="option" data-value="credit-card">
+                    <div class="inner-circle"></div>
+                    Credit Card
+                </div>
+                <div id="credit">
+                    <input type="text" id="card-number" placeholder="Card Number" name="card-number" pattern="[0-9]{16}">
+                    <input type="text" id="name" name="name" required pattern="[A-Za-z]{3,}" title="Please enter a valid Name (at least 3 letters)" placeholder="Name on card">
+                    <div id="exp">
+                        <input type="text" placeholder="Expiration date (MM / YY)" id="expiry-date" name="expiry-date" pattern="[0-9]{4}">
+                        <input type="text" placeholder="Security code" id="cvv" name="cvv" pattern="[0-9]{3}">
+                    </div>
+                </div>
+                <div id="paypal">
+                    <div class="option" data-value="paypal">
+                        <div class="inner-circle"></div>
+                        PayPal
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h2>
+                    Billing address
+                </h2>
+                <h3>
+                    Select the address that matches your card or payment method.
+                </h3>
+            </div>
+            <div class="shipping-options">
+                <div class="option standard active" data-value="standard"> 
+                  <div>
+                    <div class="inner-circle"></div>
+                    <p>	Same as shipping address</p> 
+                  </div>
+                </div>
+                <div class="option expedited" data-value="expedited">
+                    <div>
+                        <div class="inner-circle"></div>
+                        <p>	Use a different billing address</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h3>Remember me</h3>
+            </div>
+            <div id="check">
+                <label for="sms" id="checkbox">
+                    <div><input type="checkbox" id="sms" name="sms"></div>
+                    <div><p>Save my information for a faster checkout</p></div>
+                </label>
+                <div id="phone-number-container" style="display: none;">
+                    
+                    <input type="tel" id="phone" placeholder="Mobile Phone Number" name="phone">
+                    <p>Next time you check out here or on other stores powered by Shopify, you’ll receive a code by text message to securely purchase with Shop Pay.</p>
+                </div>
+            </div>
+            <div id="sub">
+                <a href="shipping.html"> < Return to shipping</a>
+                <input type="submit" onclick="pay()" value="Pay now">
+            </div>
+        </div>
+        <hr>
+        <div id="left">
+            <div id="parent">
+            </div>
+        </div>
+    </div>
 </body>
 </html>
+<script src="payment.js"></script>

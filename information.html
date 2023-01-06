@@ -483,7 +483,7 @@
                     <br>
                     <div id="sub">
                         <a href="cart.html"> < Return to cart</a>
-                        <input type="submit" value="Continue to shipping">
+                        <input type="submit" onclick="refer2()" value="Continue to shipping">
                     </div>
                 </form>
             </div>
@@ -676,6 +676,7 @@
         formArr.push(formobj);
         console.log(formArr);
         localStorage.setItem("info-list",JSON.stringify(formArr));
+        window.location="./shipping.html";
     }
 
 

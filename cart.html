@@ -302,7 +302,7 @@
             pricediv.append(strprice,price);
             var strike=document.createElement("p");
             strike.setAttribute("class","bargain");
-            strike.textContent="End Of Year Clearance Sale (- $"+ (elem.mrp_price-elem.best_price)+")";
+            strike.textContent="End Of Year Clearance Sale (- $"+ Math.round(elem.mrp_price-elem.best_price)+")";
             var del=document.createElement("button");
             del.setAttribute("class","delete");
             del.textContent="Delete";
@@ -377,7 +377,7 @@
             p2.setAttribute("id","prices");
             p2.textContent="SUBTOTAL";
             var span=document.createElement("span");
-            span.append("$"+total);
+            span.append("$"+Math.round(total));
             div3.append(p2,span);
             var p3=document.createElement("p");
             p3.textContent="Shipping, taxes, and discounts codes calculated at checkout.";
@@ -388,7 +388,7 @@
             document.querySelector("#parent").append(div3,p3,checkoutb);
     }
     function redirect(){
-        window.location="./payment.html";
+        window.location="./information.html";
     }
     function sub(elem,index){
         elem.qty--;

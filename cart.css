@@ -1,0 +1,122 @@
+#parent{
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    margin-bottom: 10px;
+}
+.img{
+    width: 10%;
+    margin-top: 50px;
+}
+.box{
+    display: flex;
+    /* width: 10%; */
+    justify-content:flex-start;
+    /* border-radius: 1px; */
+
+}
+.btn1{
+    background-color: white;
+    margin: 20px;
+}
+.btn1:hover{
+    background-color: black;
+    color: white;
+}
+.btn2:hover{
+    background-color: black;
+    color: white;
+}
+
+.btn2{
+    background-color: white;
+    margin: 20px;
+}
+
+.div3c{
+    display: flex;
+    /* width: 200px; */
+    /* flex-direction:column; */
+    /* margin:30px; */
+    justify-content: space-between;
+    margin-bottom: -25px;
+    
+    /* background-color: rgb(180, 207, 23); */
+}
+#h44{
+    color: red;
+    text-align: center;
+}
+#div4{
+    gap:20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#div4>input,#div4>button{
+    padding: 10px;
+}
+.div5{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 10%;
+    /* flex-direction: column; */
+}
+.div6{
+    display: flex;
+}
+#maindiv{
+    /* display: flex; */
+    border-bottom: 1px solid;
+}
+.bargain{
+    display: flex;
+    justify-content: flex-end;
+    color: red;
+}
+.pricediv{
+    display: flex;
+    flex-direction: column;
+}
+.str{
+    text-decoration: line-through;
+}
+.delete{
+    align-self:flex-start;
+    margin-left: 11.5%;
+    padding: 7px;
+    width: 7%;
+    color: red;
+}
+.delete:hover{
+    background-color: red;
+    color: white;
+}
+.top{
+    /* background-color: brown; */
+    margin: 250px;
+    text-align: center;
+    margin-bottom: 0px;
+}
+.top>button{
+    border: 0;
+    background-color: white;
+    border-bottom: 1px solid gray;
+}
+.top>button:hover{
+    border-bottom: 2px solid black;
+}
+.checkout{
+    align-self: center;
+    width: 30%;
+    margin: 10px;
+    padding: 13px 20px;
+    background-color: black;
+    color: white;
+    font-size: 13px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    font-family: Futura,sans-serif;
+}

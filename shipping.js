@@ -1,32 +1,24 @@
-// localStorage.setItem("fee","Free");
-//     var expeditedOption = document.querySelector('.option.expedited');
-//         expeditedOption.addEventListener('click', () => {
-//         var total=document.querySelector("#pcee").textContent;
-//         total=parseFloat(total.replace("$",""));
-//         // console.log("jo"+total);
-//         var expeditedPrice = 19.95;
-//         var newTotal = parseFloat(total) + expeditedPrice;
-//         // console.log("hio"+newTotal);
-//         localStorage.setItem("fee","$"+expeditedPrice);
-//         document.querySelector("#prices23").textContent ="$"+ expeditedPrice;
-//         document.querySelector("#pcee").textContent ="$"+ Math.round(newTotal);
-//     });
-//     var standardOption = document.querySelector('.option.standard');
-//         standardOption.addEventListener('click', () => {
-//         var total=document.querySelector("#pcee").textContent;
-//         total=parseFloat(total.replace("$",""));
-//         // console.log("jiio"+total);
-//         var expeditedPrice = 19.95;
-//         var newTotal = parseFloat(total) - expeditedPrice;
-//         // console.log("hello"+newTotal);
-//         localStorage.setItem("fee","Free");
-//         document.querySelector("#prices23").textContent = "Free";
-//         document.querySelector("#pcee").textContent ="$"+ Math.round(newTotal);
-//     });
-
-    document.getElementById('sms').onchange = function() {
-      document.getElementById('phone-number-container').style.display = this.checked ? 'block' : 'none';
-    };
+localStorage.setItem("fee","Free");
+    var expeditedOption = document.querySelector('.option.expedited');
+        expeditedOption.addEventListener('click', () => {
+        var total=document.querySelector("#pcee").textContent;
+        total=parseFloat(total.replace("$",""));
+        var expeditedPrice = 19.95;
+        var newTotal = parseFloat(total) + expeditedPrice;
+        localStorage.setItem("fee","$"+expeditedPrice);
+        document.querySelector("#prices23").textContent ="$"+ expeditedPrice;
+        document.querySelector("#pcee").textContent ="$"+ Math.round(newTotal);
+    });
+    var standardOption = document.querySelector('.option.standard');
+        standardOption.addEventListener('click', () => {
+        var total=document.querySelector("#pcee").textContent;
+        total=parseFloat(total.replace("$",""));
+        var expeditedPrice = 19.95;
+        var newTotal = parseFloat(total) - expeditedPrice;
+        localStorage.setItem("fee","Free");
+        document.querySelector("#prices23").textContent = "Free";
+        document.querySelector("#pcee").textContent ="$"+ Math.round(newTotal);
+    });
 
 
 
@@ -181,8 +173,6 @@
     }
     function redirect(){
         window.location="./payment.html";
-
-        localStorage.setItem("fee","")
     }
     function apply(data,total){
         console.log(data,total);
@@ -208,34 +198,6 @@
             sdata.textContent=elem.aname+","+elem.city+","+elem.state+","+elem.zip+","+elem.country;
         })
     }
-    var feeArr=localStorage.getItem("fee");
-    var fdata=document.querySelector("#fdata");
-    if(feeArr==="Free"){
-        fdata.textContent="Standard · Free";
-    }else{
-        fdata.textContent="Expedited · $19.95";
-        var total=document.querySelector("#pcee").textContent;
-        total=parseFloat(total.replace("$",""));
-        var expeditedPrice = 19.95;
-        var newTotal = parseFloat(total) + expeditedPrice;
-        localStorage.setItem("fee","$"+expeditedPrice);
-        document.querySelector("#prices23").textContent ="$"+ expeditedPrice;
-        document.querySelector("#pcee").textContent ="$"+ Math.round(newTotal);
-    }
-
-    function pay(){
-        var cnum=document.querySelector("#card-number").value;
-        var nam=document.querySelector("#name").value;
-        var exp=document.querySelector("#expiry-date").value;
-        var cvv=document.querySelector("#cvv").value;
-        if(cnum==="123456789"&&exp==="0123"&&cvv==="123"){
-            alert("Payment Succesful");
-            window.location="homepage.html";
-        }else{
-            alert("Please provide correct card number");
-        }
-    }
-    // var cdata=document.querySelector("#payments").add
     // California City, djfhf, California City CA 90231, United States
     // document.querySelector("sub").addEventListener("submit",Dataadd);
     // var feeArr=JSON.parse(localStorage.getItem("fee-list"))||[];
@@ -256,44 +218,3 @@
     //     console.log(feeArr);
     //     localStorage.setItem("info-list",JSON.stringify(formArr));
     // }
-    // const optionss = document.querySelectorAll('.option');
-    // optionss.forEach(option => {
-    // option.addEventListener('click', () => {
-    //     options.forEach(opt => opt.classList.remove('active'));
-    //     option.classList.add('active');
-    //     const paymentContainer = document.querySelector('.payment-container');
-    //     paymentContainer.innerHTML = ''; // clear the container
-    //     if (option.dataset.value === 'credit-card') {
-    //     // create form elements
-    //     const form = document.createElement('form');
-    //     form.innerHTML = `
-    //         <label>Card Number</label>
-    //         <input type="text" name="card-number">
-    //         <label>Expiry Date</label>
-    //         <input type="text" name="expiry-date">
-    //         <label>CVV</label>
-    //         <input type="text" name="cvv">
-    //         <button type="submit">Submit</button>
-    //     `;
-    //     form.addEventListener('submit', event => {
-    //         event.preventDefault();
-    //         const cardNumber = form.elements['card-number'].value;
-    //         const expiryDate = form.elements['expiry-date'].value;
-    //         const cvv = form.elements['cvv'].value;
-    //         if (cardNumber === '123456789' && expiryDate === '11111111' && cvv === '111') {
-    //         alert('Payment successful!');
-    //         } else {
-    //         alert('Wrong card details');
-    //         }
-    //     });
-    //     paymentContainer.appendChild(form);
-    //     } else if (option.dataset.value === 'paypal') {
-    //     // create message element
-    //     const message = document.createElement('p');
-    //     message.textContent = 'Please proceed to PayPal to complete your payment.';
-    //     paymentContainer.appendChild(message);
-    //     }
-    // });
-    // });
-
-

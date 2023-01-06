@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login or Signup</title>
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        #parent {
+            display: flex;
+            justify-content: center;
+            margin-top: 250px;
+            padding: 10px;
+        }
+
+        #c1 {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 10px;
+        }
+        #c1>label{
+            font-size: 16px;
+            line-height: 25.6px;
+            letter-spacing: 1px;
+            /* border: 2px solid red; */
+            padding: 10px 0;
+        }
+
+        #sbtn {
+            width: 100%;
+            padding: 13px 20px;
+            margin-bottom: 15px;
+            letter-spacing: 2.9px;
+            background-color: #111111;
+            color: #ffffff;
+            border: none;
+        }
+
+        #hsign>h1 {
+            font-size: 38px;
+            font-family: "Times New Roman", Times, serif;
+            font-weight: 400;
+            text-align: center;
+        }
+        #em{
+            font-size: 12px;
+            line-height: 19.2px;
+            font-family: serif;
+            font-weight: 400;
+            /* color: red; */
+            margin-bottom: 100px;
+        }
+        #semail, #signup_pass{
+            font-family: sans-serif 'Times New Roman', Times, serif;
+            font-size: 16px;
+            line-height: 25.6px;
+            font-weight: 400;
+            margin-top: 10px;
+            margin-bottom: 30px;
+            padding: 8px 10px;
+            width: 412px;
+            border: none;
+            box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        }
+        #createacc{
+            text-align: center;
+            font-size: 16px;
+            line-height: 25.6px;
+        }
+        #ersign>li{
+            color: #d02e2e;
+            background-color: #fff6f6;
+            font-size: 16px;
+            font-family: sans-serif;
+            line-height: 25.6px;
+            letter-spacing: 0.4px;
+            padding: 6px 12px;
+            margin-bottom: 15px;
+            box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+
+        <div id="banner">
+            
+            <div>
+                <h3> <pre> End &nbsp;of&nbsp; Year&nbsp; C L E A R E N C E </pre> </h3>
+                <p style="font-size: 15px;"> EXTRA 15% OFF Select Styles </p>
+                <p style="font-size: 14px"> Featuring: Valentino,Balenciaga, Bottega Veneta, Stella McCartney & More </p>
+            </div>
+
+            <!-- <div>
+                <div> SHOP NOW </div>
+            </div> -->
+        </div>
+
+        <div id="navbar">
+
+            <div id="top">
+                <div>
+                    <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/BLUEFLY-LOGO-11-20.png?v=1613183141" alt="Brand_logo">
+                </div>
+
+                <div>
+                    <button style="font-size:20px; color: rgba(0, 0, 0, 0.598);"><i class="fa fa-search"></i></button>
+                    <p style="margin-top: 2px;"> SEARCH </p>
+                    <img src="https://img.icons8.com/ios/512/user.png" alt="account">
+                    <img src="https://img.icons8.com/ios/512/shopping-bag.png" alt="bag">
+                </div>
+            </div>
+
+            <div id="mid">
+                <p class="hover-underline-animation"> CLOTHING </p>
+                <p class="hover-underline-animation"> SHOES </p>
+                <p class="hover-underline-animation"> HANDBAGS & ACCESORIES </p>
+                <p class="hover-underline-animation"> DESIGNERS </p>
+                <p class="hover-underline-animation"> SUNGLASSES </p>
+                <p class="hover-underline-animation"> JEWELRY & WATCHES </p>
+                <p class="hover-underline-animation"> UNDER &50 </p>
+                <p class="hover-underline-animation"> BEAUTY </p>
+                <p class="hover-underline-animation" style="color: red;"> CLEARENCE </p>
+            </div>
+           
+        </div>
+        
+    </div>
+    <div id="parent">
+        <div id="chil">
+            <div id="hsign">
+                <h1>LOGIN</h1>
+            </div>
+            <form>
+                <div id="ersign">
+                    <!-- <h4></h4> -->
+                </div>
+                <label for="EMAIL" id="em" >EMAIL</label> <br />
+                <input type="email" id="semail" />
+                <div id="c1">
+                    <label for="">PASSWORD</label>
+                    <label for="" id="forget_pass">Forget password</label>
+                </div>
+                <input type="password" id="signup_pass" name="password"  />
+                <div>
+                    <button id="sbtn">SIGN IN</button>
+                </div>
+                <div id="createacc">
+                    <label id="newa">Create account</label>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div id="footer">
+
+        <div> 
+            <div>
+                <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/denim_400x.jpg" alt="Denims">
+                <h2> UP TO 85% OFF THE DENIM SHOP FOR HIM & HER </h2>
+                <p> From Hudson Jeans, Joe's Jeans, J Brand & More </p>
+                <button> SHOP DENIM </button>
+            </div>
+
+            <div>
+                <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/shutterstock_1112754335--RESIZED2_400x.jpg" alt="Jumpsuits">
+                <h2> UP TO 90% OFF TRENDING JUMPSUITS & ROMPERS </h2>
+                <p> Must-Haves From Halston, BCBGMAXAZRIA, Iro & More </p>
+                <button> SHOP JUMPSUITS </button>
+            </div>
+
+            <div>
+                <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/shutterstock_210297940-resized_for_viewing_400x.jpg" alt="Woman_Accesories">
+                <h2> UP TO 90% OFF WOMEN'S MUST-HAVE ACCESSORIES </h2>
+                <p> Shop Wallets, Belts, Hats, Sunglasses & More </p>
+                <button> SHOP WOMEN's ACCESORIES </button>
+            </div>
+
+        </div>
+
+        <div>
+            <div id="up">
+                <p> ABOUT US </p>
+                <p> SIGN UP AND SAVE </p>
+            </div>
+
+            <div id="middle">
+                <div>
+                    <p> Contact Us </p>
+                    <p> Frequently Asked Questions </p>
+                    <p> Shipping & Returns </p>
+                    <p> Pre-Owned Guide </p>
+                </div>
+
+                <div>
+                    <p> Sell on Bluefly </p>
+                    <p> Privacy Policy </p>
+                    <p> Terms & Conditions </p>
+                    <p> Do not sell my personal information </p>
+                </div>
+
+                <div>
+                    <label for="subscribe"> Subscribe to get exclusive offers on designer brands </label>
+                    <form id="sub">
+                        <input type="text" placeholder="Enter your email">
+                        <input type="submit" value="Subscribe">
+                    </form>
+                    <div>
+                        <img src="https://img.icons8.com/sf-regular/512/instagram-new.png" alt="instagram" onclick="window.location.href = 'https://www.instagram.com/bluefly/'">
+                        <img style="height: 80%; margin-bottom: 5px;" src="https://img.icons8.com/material-two-tone/512/facebook-f--v2.png" alt="facebook" onclick="window.location.href = 'https://www.facebook.com/Bluefly/'">
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="down">
+                <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/Untitled_2_.png_5_x104@2x.png?v=1620852820" alt="Brand_logo">
+                <p> © 2023 Bluefly 1998-2020 BLUEFLY.COM OR ITS AFFILIATES ALL RIGHTS RESERVED. </p>
+            </div>
+        </div>
+        
+    </div>
+</body>
+
+</html>
+
+<script src="signup.js"></script>

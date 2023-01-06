@@ -20,7 +20,7 @@ function sin(){
         }
     })
     if(c===1){
-        console.log("password match")
+        window.location="profile.html"
     }else{
         var l=document.createElement('li')
         l.textContent="Incorrect email or password."

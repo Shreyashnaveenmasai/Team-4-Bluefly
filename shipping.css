@@ -3,11 +3,12 @@
     /* margin: 30px; */
 }
 #right{
+    margin-top: 50px;
     width: 65%;
     margin-left: 5%;
     /* align-items: flex-end;
     justify-content: center; */
-    border-right: 1px solid;
+    /* border-right: 1px solid; */
 }
 #left{
     width: 35%;
@@ -121,6 +122,8 @@ a{
 #forms{
     /* font-family:sans-serif; */
     width: 80%;
+    padding-bottom: 40px;
+    border-bottom: 1px solid grey;
     /* border: 1px solid crimson; */
 }
 #fhead{
@@ -306,8 +309,10 @@ input[type="submit"] {
 #maindiv{
     display: flex;
     /* border-bottom: 1px solid; */
-    gap: 20px;
+    gap: 8px;
+    height: 30%;
     align-items: center;
+    justify-content: space-between;
 }
 .bargain{
     display: flex;
@@ -466,7 +471,26 @@ input[type="submit"] {
 .option.active .inner-circle {
     background-color: black;
 }
-
+#submit-button {
+    background-color: rgb(200,200,200);
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    border: 1px solid rgb(200,200,200);
+}
+footer {
+    /* background-color: #333; */
+    display: flex;
+    position: absolute;
+    width: 46%;
+    justify-content: flex-start;
+    gap: 30px;
+    font-size: 14px;
+    padding: 20px;
+    bottom: 0;
+    border-top: 1px solid grey;
+}
 
 /* .shipping-options {
 border: 1px solid black;

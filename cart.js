@@ -42,7 +42,7 @@ function displaydata(list){
         strike.textContent="End Of Year Clearance Sale (- $"+ Math.round(elem.mrp_price-elem.best_price)+")";
         var del=document.createElement("button");
         del.setAttribute("class","delete");
-        del.textContent="Delete";
+        del.textContent="Remove";
         del.addEventListener("click",function(){
             deld(index);
         });
@@ -79,6 +79,14 @@ function displaydata(list){
     });
 }
 
+    // document.getElementById("submit-button").addEventListener("click", function() {
+    //     document.getElementById("submit-button").style.backgroundColor = "red";
+    // });
+    
+      
+    
+  
+
 function displayprice(list){
 
         total=list.reduce(function (acc,curr){
@@ -97,9 +105,12 @@ function displayprice(list){
         // cou.style.color="red";
         cou.setAttribute("id","h44");
         var textarea=document.createElement("input");
+        textarea.setAttribute("id","input")
+        textarea.placeholder="Gift card or discount code";
         var coubtn=document.createElement("button");
+        coubtn.setAttribute("id","submit-button");
         coubtn.textContent="Apply Promo";
-        coubtn.style.color="green";
+        // coubtn.style.color="green";
         coubtn.addEventListener("click",function(){
             apply(textarea.value,total);
         });
@@ -127,6 +138,13 @@ function displayprice(list){
 function redirect(){
     window.location="./information.html";
 }
+document.getElementById("input").addEventListener("input", function() {
+    if (this.value) {
+      document.getElementById("submit-button").style.backgroundColor = "black";
+    } else {
+      document.getElementById("submit-button").style.backgroundColor = "rgb(200,200,200)";
+    }
+});
 function sub(elem,index){
     elem.qty--;
     if(elem.qty===0){

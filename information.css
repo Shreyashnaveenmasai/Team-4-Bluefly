@@ -3,6 +3,7 @@
     /* margin: 50px; */
 }
 #right{
+    margin-top: 50px;
     width: 65%;
     margin-left: 5%;
     /* align-items: flex-end;
@@ -300,11 +301,17 @@ input[type="submit"] {
     margin-top: 10px;
     margin-right: 10px;
 }
+/* .div7{
+    font-family: sans-serif;
+} */
 #maindiv{
     display: flex;
     /* border-bottom: 1px solid; */
-    gap: 20px;
+    gap: 8px;
     align-items: center;
+    height: 30%;
+    font-family: sans-serif;
+    justify-content: space-between;
 }
 .bargain{
     display: flex;
@@ -314,6 +321,9 @@ input[type="submit"] {
 .pricediv{
     /* display: flex;
     flex-direction: column; */
+    /* font-family:  -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif; */
+    /* line-height: 1.3em;
+    font-weight: 500; */
 }
 .str{
     text-decoration: line-through;
@@ -380,5 +390,26 @@ input[type="submit"] {
 }
 .texta{
     padding: 100px;
+}
+#submit-button {
+    background-color: rgb(200,200,200);
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    border: 1px solid rgb(200,200,200);
+}
+footer {
+    /* background-color: #333; */
+    display: flex;
+    /* position: absolute; */
+    width: 76%;
+    justify-content: flex-start;
+    gap: 30px;
+    font-size: 14px;
+    padding: 20px;
+    bottom: 0;
+    margin-top: 30px;
+    border-top: 1px solid grey;
 }
 

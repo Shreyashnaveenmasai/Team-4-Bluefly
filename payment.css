@@ -3,11 +3,12 @@
     /* margin: 30px; */
 }
 #right{
+    margin-top: 50px;
     width: 65%;
     margin-left: 5%;
     /* align-items: flex-end;
     justify-content: center; */
-    border-right: 1px solid;
+    /* border-right: 1px solid; */
 }
 a{
     text-decoration: none;
@@ -36,6 +37,17 @@ a{
     color:rgba(0, 0, 0, 0.728);
     border: none;
 
+}
+.h2{
+    font-family: sans-serif;
+    margin-bottom: 0;
+    color:rgba(0, 0, 0, 0.728);
+
+}
+.h3{
+    color:rgba(0, 0, 0, 0.728);
+    font-size: 16px;
+    margin-top: 10px;
 }
 #items> p:nth-child(3){
     /* background-color: aqua; */
@@ -121,6 +133,8 @@ a{
 #forms{
     /* font-family:sans-serif; */
     width: 80%;
+    padding-bottom: 40px;
+    border-bottom: 1px solid grey;
     /* border: 1px solid crimson; */
 }
 #fhead{
@@ -312,8 +326,11 @@ input[type="submit"] {
     display: flex;
     /* border-bottom: 1px solid; */
     /* align-items: flex-start; */
-    gap: 20px;
+    gap: 8px;
+    height: 30%;
     align-items: center;
+    font-family: sans-serif;
+    justify-content: space-between;
 }
 .bargain{
     display: flex;
@@ -321,8 +338,8 @@ input[type="submit"] {
     color: red;
 }
 .pricediv{
-    /* display: flex;
-    flex-direction: column; */
+    /* display: flex; */
+    /* flex-direction: column; */
 }
 .str{
     text-decoration: line-through;
@@ -443,6 +460,7 @@ input[type="submit"] {
 .expedited{
     display: flex;
     justify-content: space-between;
+    border-top: 1px solid grey;
     /* background-color: blue; */
 }
 .expedited>div{
@@ -570,6 +588,7 @@ background-color: black;
 }
 #paypal{
     border-top: 1px solid grey;
+    padding: 5px;
 }
 #check{
     display: flex;
@@ -594,4 +613,50 @@ background-color: black;
 #imgg{
     display: flex;
     align-items: center;
+}
+#sms{
+    margin-right: 20px;
+    height: 20px;
+}
+#paypal-opt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(250,250,250);
+    /* background-color: blue; */
+    margin: 20px;
+}
+#paypal-opt>img{
+    margin-left: 40%;
+}
+#adres{
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+}
+#names{
+    display: flex;
+    gap:20px;
+}
+#submit-button {
+    background-color: rgb(200,200,200);
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    border: 1px solid rgb(200,200,200);
+}
+footer {
+    /* background-color: #333; */
+    display: flex;
+    /* position: absolute; */
+    width: 77%;
+    justify-content: flex-start;
+    gap: 30px;
+    font-size: 14px;
+    padding: 20px;
+    bottom: 0;
+    margin-top: 30px;
+    border-top: 1px solid grey;
 }

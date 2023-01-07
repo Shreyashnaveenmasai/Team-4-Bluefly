@@ -27,7 +27,11 @@ document.getElementById('sms').onchange = function() {
           // var imge_url="https://cdn.shopify.com/s/files/1/0248/3473/6191/products/507185-w8187-1000__2_large.jpg?v=1672383522";
           image.setAttribute("src",elem.image_url);
           var title=document.createElement("h3");
-          title.textContent=elem.name;
+          var editedText = toTitleCase(elem.name);
+          var words = editedText.split(" ");
+          var last4Words = words.slice(-4);
+          var name4=last4Words.join(" ");
+          title.textContent=name4;
           var div7=document.createElement("div");
           div7.setAttribute("class","div7");
           div7.append(title);
@@ -58,6 +62,11 @@ document.getElementById('sms').onchange = function() {
           document.querySelector("#parent").append(div);
       });
   }
+  function toTitleCase(str) {
+    return str.replace(/\w\S*/g, function(txt) {
+      return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+    });
+  }
   
   function displayprice(list){
 
@@ -78,7 +87,9 @@ document.getElementById('sms').onchange = function() {
           cou.setAttribute("id","h44");
           var textarea=document.createElement("input");
           textarea.setAttribute("class","texta");
+          textarea.setAttribute("id","input")
           var coubtn=document.createElement("button");
+          coubtn.setAttribute("id","submit-button");
           coubtn.setAttribute("class","apy");
           coubtn.textContent="Apply Promo";
           coubtn.addEventListener("click",function(){
@@ -131,15 +142,16 @@ document.getElementById('sms').onchange = function() {
           span5.setAttribute("id","pcee");
           span5.append("$"+Math.round(total+70));
           sub.append(pp,span5);
-
-          // var p4=document.createElement("p");
-          // p4.textContent="Shipping, taxes, and discounts codes calculated at checkout.";
-          // var checkoutb=document.createElement("button");
-          // checkoutb.textContent="CHECK OUT";
-          // checkoutb.setAttribute("class","checkout");
-          // checkoutb.addEventListener("click",redirect);
           document.querySelector("#parent").append(pdiv,sub);
   }
+
+    document.getElementById("input").addEventListener("input", function() {
+        if (this.value) {
+        document.getElementById("submit-button").style.backgroundColor = "black";
+        } else {
+        document.getElementById("submit-button").style.backgroundColor = "rgb(200,200,200)";
+        }
+    });
   function redirect(){
       window.location="./payment.html";
   }
@@ -157,7 +169,13 @@ document.getElementById('sms').onchange = function() {
       }
 
   }
-  document.querySelector("form").addEventListener("submit",Dataadd);
+    // var termsLink = document.getElementById('terms-of-policy-link');
+    // var dialogBox = document.getElementById('dialog-box');
+    // termsLink.addEventListener('click', function(event) {
+    //         event.preventDefault(); 
+    //         dialogBox.style.display = 'block';
+    // });
+    document.querySelector("form").addEventListener("submit",Dataadd);
   var formArr=JSON.parse(localStorage.getItem("info-list"))||[];
   function Dataadd(){
       event.preventDefault();

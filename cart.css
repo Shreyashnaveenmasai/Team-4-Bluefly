@@ -86,12 +86,62 @@ a{
 .str{
     text-decoration: line-through;
 }
+#submit-button {
+    background-color: rgb(200,200,200);
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 2px;
+    border: 1px solid rgb(200,200,200);
+}
+/* #input {
+    position: relative;
+} */
+  
+
+
+/* #input {
+    position: relative;
+}
+  
+#input::placeholder {
+    color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: all 0.3s ease-in-out;
+    pointer-events: none;
+}
+  
+#input:focus::placeholder {
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 1;
+}
+  
+#input:not(:placeholder-shown):focus::placeholder {
+    top: -100%;
+    left: 0;
+    z-index: -1;
+    opacity: 0;
+} */
+  
+  
+  
+/* #submit-button:hover {
+    background-color: lightblue;
+    cursor: pointer;
+} */
+  
 .delete{
     align-self:flex-start;
     margin-left: 11.5%;
     padding: 7px;
     width: 7%;
-    color: red;
+    color: black;
+    border-radius: 5px;
 }
 .delete:hover{
     background-color: red;

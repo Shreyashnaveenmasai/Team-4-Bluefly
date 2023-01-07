@@ -28,6 +28,33 @@
       document.getElementById('phone-number-container').style.display = this.checked ? 'block' : 'none';
     };
 
+    const standardOption = document.querySelector('.option.standard');
+    const expeditedOption = document.querySelector('.option.expedited');
+    const billingAddressForm = document.querySelector('#adres');
+
+    expeditedOption.addEventListener('click', () => {
+    billingAddressForm.style.display = 'block';
+    });
+
+    standardOption.addEventListener('click', () => {
+    billingAddressForm.style.display = 'none';
+    });
+
+
+    var creditCardOption = document.querySelector('#payments .option[data-value="credit-card"]');
+    var paypalOption = document.querySelector('#payments .option[data-value="paypal"]');
+    var creditCardInputs = document.querySelector('#payments #credit');
+    var paypalMessage = document.querySelector('#payments #paypal-opt');
+    creditCardOption.addEventListener('click', () => {
+        creditCardInputs.style.display = 'block';
+        paypalMessage.style.display = 'none';
+    });
+    paypalOption.addEventListener('click', () => {
+        creditCardInputs.style.display = 'none';
+        paypalMessage.style.display = 'block';
+    });
+
+
 
 
     var options = document.querySelectorAll('.option');
@@ -66,7 +93,11 @@
             // var imge_url="https://cdn.shopify.com/s/files/1/0248/3473/6191/products/507185-w8187-1000__2_large.jpg?v=1672383522";
             image.setAttribute("src",elem.image_url);
             var title=document.createElement("h3");
-            title.textContent=elem.name;
+            var editedText = toTitleCase(elem.name);
+            var words = editedText.split(" ");
+            var last4Words = words.slice(-4);
+            var name4=last4Words.join(" ");
+            title.textContent=name4;
             var div7=document.createElement("div");
             div7.setAttribute("class","div7");
             div7.append(title);
@@ -97,6 +128,11 @@
             document.querySelector("#parent").append(div);
         });
     }
+    function toTitleCase(str) {
+        return str.replace(/\w\S*/g, function(txt) {
+          return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+        });
+    }
     
     function displayprice(list){
 
@@ -117,7 +153,9 @@
             cou.setAttribute("id","h44");
             var textarea=document.createElement("input");
             textarea.setAttribute("class","texta");
+            textarea.setAttribute("id","input")
             var coubtn=document.createElement("button");
+            coubtn.setAttribute("id","submit-button");
             coubtn.setAttribute("class","apy");
             coubtn.textContent="Apply Promo";
             coubtn.addEventListener("click",function(){
@@ -179,6 +217,13 @@
             // checkoutb.addEventListener("click",redirect);
             document.querySelector("#parent").append(pdiv,sub);
     }
+    document.getElementById("input").addEventListener("input", function() {
+        if (this.value) {
+          document.getElementById("submit-button").style.backgroundColor = "black";
+        } else {
+          document.getElementById("submit-button").style.backgroundColor = "rgb(200,200,200)";
+        }
+    });
     function redirect(){
         window.location="./payment.html";
 

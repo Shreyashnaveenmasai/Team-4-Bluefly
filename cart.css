@@ -4,6 +4,9 @@
     margin: 50px;
     margin-bottom: 10px;
 }
+a{
+    text-decoration: none;
+}
 .img{
     width: 10%;
     margin-top: 50px;

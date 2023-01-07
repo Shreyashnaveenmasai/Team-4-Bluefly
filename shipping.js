@@ -85,7 +85,7 @@ localStorage.setItem("fee","Free");
             totalitem++;
             totalprice+=elem.best_price*elem.qty;
             var hr3=document.createElement("hr");
-            div.append(div6,div7,pricediv,hr3);
+            div.append(div6,div7,pricediv);
             document.querySelector("#parent").append(div);
         });
     }

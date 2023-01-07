@@ -151,7 +151,7 @@ function deld(index){
     if(dataArr.length===0){
         document.querySelector("#parent").textContent="Cart is Empty Add Products In Cart";
     }else{
-        localStorage.setItem("cart",JSON.stringify(dataArr));
+        localStorage.setItem("newcart",JSON.stringify(dataArr));
         displaydata(dataArr);
         displayprice(dataArr);
     }

@@ -1,12 +1,17 @@
 #full{
     display:flex;
-    margin: 30px;
+    /* margin: 30px; */
 }
 #right{
     width: 65%;
     margin-left: 5%;
     /* align-items: flex-end;
     justify-content: center; */
+    border-right: 1px solid;
+}
+a{
+    text-decoration: none;
+    color: black;
 }
 #left{
     width: 35%;
@@ -298,9 +303,16 @@ input[type="submit"] {
     margin-top: 10px;
     margin-right: 10px;
 }
+.div7{
+    /* display: flex;
+    align-items: flex-start; */
+    /* background-color: aqua; */
+}
 #maindiv{
     display: flex;
     /* border-bottom: 1px solid; */
+    /* align-items: flex-start; */
+    gap: 20px;
     align-items: center;
 }
 .bargain{
@@ -444,7 +456,6 @@ input[type="submit"] {
     align-items: center;
     padding: 10px;
     cursor: pointer;
-    border-bottom: 1px solid black;
 }
 
 .option:last-child {
@@ -469,7 +480,19 @@ input[type="submit"] {
 .option.active .inner-circle {
     background-color: black;
 }
-
+#between{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid grey;
+    padding: 5px;
+}
+#between>img{
+    /* margin-right: 10px; */
+}
+.option>img{
+    width: 10%;
+}
 /* .payment-options {
 border: 1px solid black;
 display: flex;
@@ -546,7 +569,7 @@ background-color: black;
     gap:20px;
 }
 #paypal{
-    border-top: 1px solid;
+    border-top: 1px solid grey;
 }
 #check{
     display: flex;
@@ -567,4 +590,8 @@ background-color: black;
 }
 #phone-number-container{
     margin-left: 10px;
+}
+#imgg{
+    display: flex;
+    align-items: center;
 }

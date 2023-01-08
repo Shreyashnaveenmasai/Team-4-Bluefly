@@ -75,6 +75,8 @@
     font-size: 13px;
     letter-spacing: 2px;
     padding-bottom: 5px;
+    margin: auto;
+    text-align: center;
 }
 
 
@@ -202,7 +204,6 @@
 }
 
 #bannerText {
-    width: 40%;
     color: white;
     text-align: center;
     padding-top: 200px;

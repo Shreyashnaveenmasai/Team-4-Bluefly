@@ -1,0 +1,21 @@
+#view {
+    margin: 125px -9px 0px -9px;
+    /* height: 800px; */
+    border: 1px solid red;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+#view > div {
+    /* height: 100%; */
+    border: 1px solid black;
+    display: flex;
+    justify-content: end;
+}
+
+#view > div > img {
+    width: 80%;
+    height: 90%;
+    
+    /* margin-left: 50px; */
+}

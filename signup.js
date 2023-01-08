@@ -20,6 +20,7 @@ function sin(){
         }
     })
     if(c===1){
+        localStorage.setItem('login', '1');
         window.location="homepage.html"
     }else{
         var l=document.createElement('li')

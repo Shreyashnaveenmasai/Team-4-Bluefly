@@ -23,8 +23,8 @@
                     <div>
                         <button style="font-size:20px;  color: rgba(0, 0, 0, 0.598);"><i class="fa fa-search"></i></button>
                         <p style="margin-top: 2px;"> SEARCH </p>
-                        <img src="https://img.icons8.com/ios/512/user.png" alt="account">
-                        <img src="https://img.icons8.com/ios/512/shopping-bag.png" alt="bag">
+                        <img onclick="check()" src="https://img.icons8.com/ios/512/user.png" alt="account">
+                        <img onclick="window.location.href = `./cart.html`" src="https://img.icons8.com/ios/512/shopping-bag.png" alt="bag">
                     </div>
                 </div>
 
@@ -606,36 +606,8 @@
             <h1> NEW ARRIVALS </h1>
             <button> VIEW ALL </button>
 
-            <div>
-                <div>
-                    <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/products/y6nP66dgO2ynCL0EQG3UlEzZB9zlvuDj-25_180x.jpg?v=1672707048%20180w%20180h,%20%20%20//cdn.shopify.com/s/files/1/0248/3473/6191/products/y6nP66dgO2ynCL0EQG3UlEzZB9zlvuDj-25_360x.jpg?v=1672707048%20360w%20360h,%20%20%20//cdn.shopify.com/s/files/1/0248/3473/6191/products/y6nP66dgO2ynCL0EQG3UlEzZB9zlvuDj-25_540x.jpg?v=1672707048%20540w%20540h,%20%20%20//cdn.shopify.com/s/files/1/0248/3473/6191/products/y6nP66dgO2ynCL0EQG3UlEzZB9zlvuDj-25_720x.jpg?v=1672707048%20720w%20720h,%20%20%20//cdn.shopify.com/s/files/1/0248/3473/6191/products/y6nP66dgO2ynCL0EQG3UlEzZB9zlvuDj-25_900x.jpg?v=1672707048%20900w%20900h,%20%20%20//cdn.shopify.com/s/files/1/0248/3473/6191/products/y6nP66dgO2ynCL0EQG3UlEzZB9zlvuDj-25_1080x.jpg?v=1672707048%201080w%201080h," alt="">
-                    <p> JOELLE  WOMENS SHERPA WINTER PUFFER JACKET </p>
-                    <p> <s> $650 </s> $307.99 <span id="save"> Save 53% </span> </p>
-                </div>
-
-                <div>
-                    <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/products/4o4zctBxlS8CMVkgIO2w20L5HkbfhTdU-25_c36a23b1-9812-4e6c-b495-ef25117fddc1_1800x1800.jpg?v=1673131854" alt="">
-                    <p> PALAMINO BOOT WOMENS LEATHER BOOTIE CHELSEA BOOTS </p>
-                    <p> <s> $425 </s> $292 <span id="save"> Save 31% </span> </p>
-                </div>
-
-                <div>
-                    <img style="height: 280px;" src="https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1161523379_RLLZ_1_180x.jpg?v=1672698950%20180w%20225h,%20%20%20//cdn.shopify.com/s/files/1/0248/3473/6191/products/1161523379_RLLZ_1_360x.jpg?v=1672698950%20360w%20450h,%20%20%20//cdn.shopify.com/s/files/1/0248/3473/6191/products/1161523379_RLLZ_1_540x.jpg?v=1672698950%20540w%20675h,%20%20%20//cdn.shopify.com/s/files/1/0248/3473/6191/products/1161523379_RLLZ_1_720x.jpg?v=1672698950%20720w%20900h," alt="">
-                    <p> PROENZA SCHOULER TWIN LEATHER TOTE </p>
-                    <p> <s> $550 </s> $469.99 <span id="save"> Save %15 </span> </p>
-                </div>
-
-                <div>
-                    <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/products/63aef9a5942fb_180x.jpg?v=1672729473%20180w%20180h,%20%20%20//cdn.shopify.com/s/files/1/0248/3473/6191/products/63aef9a5942fb_360x.jpg?v=1672729473%20360w%20360h,%20%20%20//cdn.shopify.com/s/files/1/0248/3473/6191/products/63aef9a5942fb_540x.jpg?v=1672729473%20540w%20540h,%20%20%20//cdn.shopify.com/s/files/1/0248/3473/6191/products/63aef9a5942fb_720x.jpg?v=1672729473%20720w%20720h,%20%20%20//cdn.shopify.com/s/files/1/0248/3473/6191/products/63aef9a5942fb_900x.jpg?v=1672729473%20900w%20900h," alt="">
-                    <p> 1 1/2CT DIAMOND & MOISSANITE HALO ENGAGEMENT RING IN 10K GOLD </p>
-                    <p> <s> $1797 </s> $718.80 <span id="save"> Save 60% </span> </p>
-                </div>
-
-                <div>
-                    <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/products/63af0628b47ec_360x.jpg?v=1672729429" alt="" style="height: 280px; ">
-                    <p style="margin-top: -15px;"> 1 1/3CT DIAMOND & MOISSANITE DESIGNED ACCENT ENGAGEMENT RING IN 10K GOLD </p>
-                    <p> <s> $2097 </s> $838.80 <span id="save"> Save 60% </span> </p>
-                </div>
+            <div id="arrival">
+                <!-- append newely arrived products here -->
             </div>
             
         </div>
@@ -644,36 +616,8 @@
             <h1> TRENDING CATAGORY </h1>
             <button> VIEW ALL </button>
 
-            <div>
-                <div>
-                    <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1044770_9a3e0b24-b5a0-44fa-99ef-9dcbb055fc56_360x.jpg?v=1633855402" alt="">
-                    <p> ALENCIAGA HANDBAGS CITY WOMEN LEATHER RED </p>
-                    <p> <s> $1867 </s> $1,176.68 <span id="save"> Save 37% </span> </p>
-                </div>
-
-                <div>
-                    <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1070510_360x.jpg?v=1633732658" alt="">
-                    <p> GIVENCHY ANKLE BOOTS BOTTLE SHOW WOMEN LEATHER BLACK </p>
-                    <p> <s> $1549 </s> $672.90 <span id="save"> Save 57% </span> </p>
-                </div>
-
-                <div>
-                    <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/products/2217387_360x.jpg?v=1647440688" alt="">
-                    <p> PRINTED SILK SHIRT </p>
-                    <p> <s> $1801 </s> $999.36 <span id="save"> Save 45% </span> </p>
-                </div>
-
-                <div>
-                    <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1035747_360x.jpg?v=1635150228" alt="">
-                    <p> SAINT LAURENT BACKPACK AND BUMBAGS MEN FABRIC BLACK </p>
-                    <p> <s> $783 </s> $612.68 <span id="save"> Save 22% </span> </p>
-                </div>
-
-                <div>
-                    <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1044778_00342bb3-8266-4f15-9fd2-2e926bc821f2_360x.jpg?v=1633855404" alt="">
-                    <p> BALENCIAGA HANDBAGS CITY WOMEN LEATHER GRAY </p>
-                    <p> <s> $2108 </s> $1,322.70 <span id="save"> Save 37% </span> </p>
-                </div>
+            <div id="trending">
+                <!-- append trending products here -->
             </div>
         </div>
 

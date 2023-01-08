@@ -12,7 +12,6 @@ if(dataArr.length===0){
     displayprice(dataArr);
 }
 
-
 function displaydata(list){
     document.querySelector("#parent").textContent="";
     list.map(function (elem,index){
@@ -125,6 +124,7 @@ function displayprice(list){
         p2.setAttribute("id","prices");
         p2.textContent="SUBTOTAL";
         var span=document.createElement("span");
+        span.setAttribute("id","span");
         span.append("$"+Math.round(total));
         div3.append(p2,span);
         var p3=document.createElement("p");
@@ -149,16 +149,20 @@ function sub(elem,index){
     elem.qty--;
     if(elem.qty===0){
         deld(index);
+    displaydata(dataArr);
+    displayprice(dataArr);
+    }else{
+    localStorage.setItem("newcart",JSON.stringify(dataArr));
+    displaydata(dataArr);
+    displayprice(dataArr);
     }
     // localStorage.setItem("cart",dataArr);
 
-    displaydata(dataArr);
-    displayprice(dataArr);
+    
 }
 function add(elem){
     elem.qty++;
-    // localStorage.setItem("cart",dataArr);
-
+    localStorage.setItem("newcart",JSON.stringify(dataArr));
     displaydata(dataArr);
     displayprice(dataArr);
     
@@ -175,15 +179,23 @@ function deld(index){
     }
     
 }
+localStorage.setItem("promo","NONE");
+console.log(localStorage.getItem("promo"));
 function apply(data,total){
-    console.log(data,total);
-    if(data==="masai30"){
-        total=(total*30)/100;
-        document.querySelector("span").textContent="$"+Math.round(total);
+    // console.log(data,total);
+    var ptext=document.querySelector("#h44").textContent;
+    if(data==="masai30"&&(ptext==="Enter Promo Code"||ptext==="Promo Does Not Exist")){
+        total=total-(total*0.3);
+        // console.log(document.querySelector("#h44").textContent);
+        document.querySelector("#span").textContent="$"+Math.round(total);
         document.querySelector("#h44").textContent="Promo Applied";
-        console.log(total);
-
-    }else{
+        // console.log(total);
+        localStorage.setItem("promo","THIRTY");
+        console.log(localStorage.getItem("promo"));
+    }else if(ptext==="Promo Applied"||ptext==="Promo Code Alredy Applied"){
+        document.querySelector("#h44").textContent="Promo Code Alredy Applied";
+    }
+    else{
         document.querySelector("#h44").textContent="Promo Does Not Exist";
     }
 

@@ -143,6 +143,13 @@ document.getElementById('sms').onchange = function() {
           span5.append("$"+Math.round(total+70));
           sub.append(pp,span5);
           document.querySelector("#parent").append(pdiv,sub);
+
+        if(localStorage.getItem("promo")==="THIRTY"){
+            total=total-(total*0.3);
+            document.querySelector("#pce").textContent="$"+Math.round(total);
+            document.querySelector("#pcee").textContent="$"+Math.round(total+70);
+            document.querySelector("#h44").textContent="Promo Applied";
+        }
   }
 
     document.getElementById("input").addEventListener("input", function() {
@@ -155,20 +162,42 @@ document.getElementById('sms').onchange = function() {
   function redirect(){
       window.location="./payment.html";
   }
-  function apply(data,total){
-      console.log(data,total);
-      if(data==="masai30"){
-          total=(total*30)/100;
-          document.querySelector("#pce").textContent="$"+Math.round(total);
-          document.querySelector("#pcee").textContent="$"+Math.round(total+70);
-          document.querySelector("#h44").textContent="Promo Applied";
-          console.log(total);
+//   function apply(data,total){
+//       console.log(data,total);
+//       if(data==="masai30"){
+//           total=(total*30)/100;
+        //   document.querySelector("#pce").textContent="$"+Math.round(total);
+        //   document.querySelector("#pcee").textContent="$"+Math.round(total+70);
+        //   document.querySelector("#h44").textContent="Promo Applied";
+//           console.log(total);
 
-      }else{
-          document.querySelector("#h44").textContent="Promo Does Not Exist";
-      }
+//       }else{
+//           document.querySelector("#h44").textContent="Promo Does Not Exist";
+//       }
 
-  }
+//   }
+
+    
+
+    function apply(data,total){
+        // console.log(data,total);
+        var ptext=document.querySelector("#h44").textContent;
+        if(data==="masai30"&&(ptext==="Enter Promo Code"||ptext==="Promo Does Not Exist")){
+            total=total-(total*0.3);
+            // console.log(document.querySelector("#h44").textContent);
+            document.querySelector("#pce").textContent="$"+Math.round(total);
+            document.querySelector("#pcee").textContent="$"+Math.round(total+70);
+            document.querySelector("#h44").textContent="Promo Applied";
+            // console.log(total);
+            localStorage.setItem("promo","THIRTY");
+            console.log(localStorage.getItem("promo"));
+        }else if(ptext==="Promo Applied"||ptext==="Promo Code Alredy Applied"){
+            document.querySelector("#h44").textContent="Promo Code Alredy Applied";
+        }
+        else{
+            document.querySelector("#h44").textContent="Promo Does Not Exist";
+        }
+    }
     // var termsLink = document.getElementById('terms-of-policy-link');
     // var dialogBox = document.getElementById('dialog-box');
     // termsLink.addEventListener('click', function(event) {

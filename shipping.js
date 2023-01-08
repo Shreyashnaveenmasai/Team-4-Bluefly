@@ -181,6 +181,13 @@ localStorage.setItem("fee","Free");
             // checkoutb.setAttribute("class","checkout");
             // checkoutb.addEventListener("click",redirect);
             document.querySelector("#parent").append(pdiv,sub);
+
+            if(localStorage.getItem("promo")==="THIRTY"){
+                total=total-(total*0.3);
+                document.querySelector("#pce").textContent="$"+Math.round(total);
+                document.querySelector("#pcee").textContent="$"+Math.round(total+70);
+                document.querySelector("#h44").textContent="Promo Applied";
+            }
     }
     document.getElementById("input").addEventListener("input", function() {
         if (this.value) {
@@ -192,19 +199,42 @@ localStorage.setItem("fee","Free");
     function redirect(){
         window.location="./payment.html";
     }
+    // function apply(data,total){
+    //     console.log(data,total);
+    //     if(data==="masai30"){
+    //         total=(total*30)/100;
+    //         document.querySelector("#pce").textContent="$"+Math.round(total);
+    //         document.querySelector("#pcee").textContent="$"+Math.round(total+70);
+    //         document.querySelector("#h44").textContent="Promo Applied";
+    //         console.log(total);
+
+    //     }else{
+    //         document.querySelector("#h44").textContent="Promo Does Not Exist";
+    //     }
+
+    // }
+    // if(localStorage.getItem("promo")==="THIRTY"){
+    //     document.querySelector("#h44").textContent="Promo Applied";
+    // }
+
     function apply(data,total){
         console.log(data,total);
-        if(data==="masai30"){
-            total=(total*30)/100;
+        var ptext=document.querySelector("#h44").textContent;
+        if(data==="masai30"&&(ptext==="Enter Promo Code"||ptext==="Promo Does Not Exist")){
+            total=total-(total*0.3);
+            console.log(document.querySelector("#h44").textContent);
             document.querySelector("#pce").textContent="$"+Math.round(total);
             document.querySelector("#pcee").textContent="$"+Math.round(total+70);
             document.querySelector("#h44").textContent="Promo Applied";
             console.log(total);
-
-        }else{
+            localStorage.setItem("promo","THIRTY");
+            console.log(localStorage.getItem("promo"));
+        }else if(ptext==="Promo Applied"||ptext==="Promo Code Alredy Applied"){
+            document.querySelector("#h44").textContent="Promo Code Alredy Applied";
+        }
+        else{
             document.querySelector("#h44").textContent="Promo Does Not Exist";
         }
-
     }
     var formArr=JSON.parse(localStorage.getItem("info-list"))||[];
     Ddata();

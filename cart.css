@@ -13,10 +13,7 @@ a{
 }
 .box{
     display: flex;
-    /* width: 10%; */
     justify-content:flex-start;
-    /* border-radius: 1px; */
-
 }
 .btn1{
     background-color: white;
@@ -38,13 +35,8 @@ a{
 
 .div3c{
     display: flex;
-    /* width: 200px; */
-    /* flex-direction:column; */
-    /* margin:30px; */
     justify-content: space-between;
     margin-bottom: -25px;
-    
-    /* background-color: rgb(180, 207, 23); */
 }
 #h44{
     color: red;
@@ -55,7 +47,6 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 #div4>input,#div4>button{
     padding: 10px;
@@ -65,13 +56,11 @@ a{
     justify-content: space-between;
     align-items: center;
     margin-left: 10%;
-    /* flex-direction: column; */
 }
 .div6{
     display: flex;
 }
 #maindiv{
-    /* display: flex; */
     border-bottom: 1px solid;
 }
 .bargain{
@@ -94,47 +83,6 @@ a{
     border-radius: 2px;
     border: 1px solid rgb(200,200,200);
 }
-/* #input {
-    position: relative;
-} */
-  
-
-
-/* #input {
-    position: relative;
-}
-  
-#input::placeholder {
-    color: black;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    transition: all 0.3s ease-in-out;
-    pointer-events: none;
-}
-  
-#input:focus::placeholder {
-    top: 0;
-    left: 0;
-    z-index: 1;
-    opacity: 1;
-}
-  
-#input:not(:placeholder-shown):focus::placeholder {
-    top: -100%;
-    left: 0;
-    z-index: -1;
-    opacity: 0;
-} */
-  
-  
-  
-/* #submit-button:hover {
-    background-color: lightblue;
-    cursor: pointer;
-} */
-  
 .delete{
     align-self:flex-start;
     margin-left: 11.5%;
@@ -148,7 +96,6 @@ a{
     color: white;
 }
 .top{
-    /* background-color: brown; */
     margin: 150px;
     text-align: center;
     margin-bottom: 0px;

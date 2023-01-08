@@ -1,30 +1,22 @@
-document.getElementById('sms').onchange = function() {
-    document.getElementById('phone-number-container').style.display = this.checked ? 'block' : 'none';
-  };
-  function refer(){
-      window.location="./index.html";
-  }
-  var dataArr=JSON.parse(localStorage.getItem("newcart")) || [];
-  if(dataArr.length===0){
-      document.querySelector("#parent").textContent="Cart is Empty Add Products In Cart";
-  }else{
-      var total=0;
-      var totalprice=0;
-      var totalitem=0;
-      displaydata(dataArr);
-      displayprice(dataArr);
-  }
-  
-  
-  function displaydata(list){
-      document.querySelector("#parent").textContent="";
-      list.map(function (elem,index){
+    var dataArr=JSON.parse(localStorage.getItem("newcart")) || [];
+    if(dataArr.length===0){
+        document.querySelector("#parent").textContent="Cart is Empty Add Products In Cart";
+    }else{
+        var total=0;
+        var totalprice=0;
+        var totalitem=0;
+        displaydata(dataArr);
+        displayprice(dataArr);
+    }
+
+    function displaydata(list){
+        document.querySelector("#parent").textContent="";
+        list.map(function (elem,index){
           var parent=document.querySelector("#parent");
           var div=document.createElement("div");
           div.setAttribute("id","maindiv");
           var image=document.createElement("img");
           image.setAttribute("class","img");
-          // var imge_url="https://cdn.shopify.com/s/files/1/0248/3473/6191/products/507185-w8187-1000__2_large.jpg?v=1672383522";
           image.setAttribute("src",elem.image_url);
           var title=document.createElement("h3");
           var editedText = toTitleCase(elem.name);
@@ -37,9 +29,6 @@ document.getElementById('sms').onchange = function() {
           div7.append(title);
           var div6=document.createElement("div");
           div6.setAttribute("class","div6");
-          // <div class="quantity-circle">
-          // <span id="quantity-value">1</span>
-          // </div>
           var circle=document.createElement("div");
           circle.setAttribute("class","quantity-circle");
           var span=document.createElement("span");
@@ -60,16 +49,15 @@ document.getElementById('sms').onchange = function() {
           var hr3=document.createElement("hr");
           div.append(div6,div7,pricediv);
           document.querySelector("#parent").append(div);
-      });
-  }
-  function toTitleCase(str) {
-    return str.replace(/\w\S*/g, function(txt) {
-      return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
-    });
-  }
+        });
+    }
+    function toTitleCase(str) {
+        return str.replace(/\w\S*/g, function(txt) {
+        return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+        });
+    }
   
-  function displayprice(list){
-
+    function displayprice(list){
           total=list.reduce(function (acc,curr){
               return acc+curr.best_price*curr.qty;
           },0);
@@ -77,13 +65,10 @@ document.getElementById('sms').onchange = function() {
           list.forEach(element => {
               item++;
           });
-
-
           var div4=document.createElement("div");
           div4.setAttribute("id","div4");
           var cou=document.createElement("h4");
           cou.textContent="Enter Promo Code";
-          // cou.style.color="red";
           cou.setAttribute("id","h44");
           var textarea=document.createElement("input");
           textarea.setAttribute("class","texta");
@@ -97,7 +82,6 @@ document.getElementById('sms').onchange = function() {
           });
           div4.append(textarea,coubtn);
           document.querySelector("#parent").append(cou,div4);
-
           var div3=document.createElement("div");
           div3.setAttribute("class","div3c");
           var p2=document.createElement("p");
@@ -107,7 +91,6 @@ document.getElementById('sms').onchange = function() {
           span.setAttribute("id","pce")
           span.append("$"+Math.round(total));
           div3.append(p2,span);
-
           var div5c=document.createElement("div");
           div5c.setAttribute("class","div3c");
           var p4=document.createElement("p");
@@ -124,15 +107,12 @@ document.getElementById('sms').onchange = function() {
           var p3=document.createElement("p");
           p3.setAttribute("id","prices1");
           p3.textContent="Estimated tax";
-          // var span1=document.createElement("span");
-          // span1.append("$"+Math.round(70));
           var span1=document.createElement("p");
           span1.textContent="$70";
           div4c.append(p3,span1);
           var pdiv=document.createElement("div");
           pdiv.setAttribute("class","pdiv");
           pdiv.append(hr1,div3,div5c,div4c,hr2);
-
           var sub=document.createElement("div");
           sub.setAttribute("class","div3c");
           var pp=document.createElement("p");
@@ -143,52 +123,39 @@ document.getElementById('sms').onchange = function() {
           span5.append("$"+Math.round(total+70));
           sub.append(pp,span5);
           document.querySelector("#parent").append(pdiv,sub);
-
         if(localStorage.getItem("promo")==="THIRTY"){
             total=total-(total*0.3);
             document.querySelector("#pce").textContent="$"+Math.round(total);
             document.querySelector("#pcee").textContent="$"+Math.round(total+70);
             document.querySelector("#h44").textContent="Promo Applied";
         }
-  }
+    }
+
+    document.getElementById('sms').onchange = function() {
+        document.getElementById('phone-number-container').style.display = this.checked ? 'block' : 'none';
+    };
+    function refer(){
+        window.location="./index.html";
+    }
 
     document.getElementById("input").addEventListener("input", function() {
         if (this.value) {
-        document.getElementById("submit-button").style.backgroundColor = "black";
+            document.getElementById("submit-button").style.backgroundColor = "black";
         } else {
-        document.getElementById("submit-button").style.backgroundColor = "rgb(200,200,200)";
+            document.getElementById("submit-button").style.backgroundColor = "rgb(200,200,200)";
         }
     });
-  function redirect(){
-      window.location="./payment.html";
-  }
-//   function apply(data,total){
-//       console.log(data,total);
-//       if(data==="masai30"){
-//           total=(total*30)/100;
-        //   document.querySelector("#pce").textContent="$"+Math.round(total);
-        //   document.querySelector("#pcee").textContent="$"+Math.round(total+70);
-        //   document.querySelector("#h44").textContent="Promo Applied";
-//           console.log(total);
-
-//       }else{
-//           document.querySelector("#h44").textContent="Promo Does Not Exist";
-//       }
-
-//   }
-
-    
+    function redirect(){
+        window.location="./payment.html";
+    }
 
     function apply(data,total){
-        // console.log(data,total);
         var ptext=document.querySelector("#h44").textContent;
         if(data==="masai30"&&(ptext==="Enter Promo Code"||ptext==="Promo Does Not Exist")){
             total=total-(total*0.3);
-            // console.log(document.querySelector("#h44").textContent);
             document.querySelector("#pce").textContent="$"+Math.round(total);
             document.querySelector("#pcee").textContent="$"+Math.round(total+70);
             document.querySelector("#h44").textContent="Promo Applied";
-            // console.log(total);
             localStorage.setItem("promo","THIRTY");
             console.log(localStorage.getItem("promo"));
         }else if(ptext==="Promo Applied"||ptext==="Promo Code Alredy Applied"){
@@ -198,29 +165,24 @@ document.getElementById('sms').onchange = function() {
             document.querySelector("#h44").textContent="Promo Does Not Exist";
         }
     }
-    // var termsLink = document.getElementById('terms-of-policy-link');
-    // var dialogBox = document.getElementById('dialog-box');
-    // termsLink.addEventListener('click', function(event) {
-    //         event.preventDefault(); 
-    //         dialogBox.style.display = 'block';
-    // });
+    
     document.querySelector("form").addEventListener("submit",Dataadd);
-  var formArr=JSON.parse(localStorage.getItem("info-list"))||[];
-  function Dataadd(){
-      event.preventDefault();
-      var email=document.querySelector("#email").value;
-      var country=document.querySelector("#country").value;
-      var fname=document.querySelector("#fname").value;
-      var lname=document.querySelector("#lname").value;
-      var aname=document.querySelector("#aname").value;
-      var city=document.querySelector("#city").value;
-      var state=document.querySelector("#state").value;
-      var zip=document.querySelector("#zip").value;
-      var telp=document.querySelector("#telp").value;
-      var formobj={email:email,country:country,fname:fname,lname:lname,aname:aname,city:city,state:state,zip:zip,telp:telp};
-      console.log(formobj);
-      formArr.push(formobj);
-      console.log(formArr);
-      localStorage.setItem("info-list",JSON.stringify(formArr));
-      window.location="./shipping.html";
-  }
+    var formArr=JSON.parse(localStorage.getItem("info-list"))||[];
+    function Dataadd(){
+        event.preventDefault();
+        var email=document.querySelector("#email").value;
+        var country=document.querySelector("#country").value;
+        var fname=document.querySelector("#fname").value;
+        var lname=document.querySelector("#lname").value;
+        var aname=document.querySelector("#aname").value;
+        var city=document.querySelector("#city").value;
+        var state=document.querySelector("#state").value;
+        var zip=document.querySelector("#zip").value;
+        var telp=document.querySelector("#telp").value;
+        var formobj={email:email,country:country,fname:fname,lname:lname,aname:aname,city:city,state:state,zip:zip,telp:telp};
+        console.log(formobj);
+        formArr.push(formobj);
+        console.log(formArr);
+        localStorage.setItem("info-list",JSON.stringify(formArr));
+        window.location="./shipping.html";
+    }

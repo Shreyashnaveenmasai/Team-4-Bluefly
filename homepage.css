@@ -23,8 +23,10 @@
     justify-content: space-between;
 }
 
-#navbar > div {
+#top {
     display: flex;
+    padding-top: 10px;
+    margin-bottom: 5px;
 }
 
 #navbar > #top > div:nth-child(1) {
@@ -68,6 +70,7 @@
     height: 40%;
     gap: 3%;
     margin: auto;
+    display: flex;
 }
 
 
@@ -326,7 +329,6 @@
 #newArrival {
     width: 100%;
     text-align: center;
-    height: 580px;
     border-bottom: 1px solid #e6e6e6;
 }
 
@@ -345,25 +347,28 @@
 
 #newArrival > div {
     width: 80%;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
     margin: auto;
     margin-top: 30px;
-    gap: 50px;
+    margin-bottom: 30px;
+    gap: 1%;
     justify-content: center;
 }
 
 #newArrival > div > div > img {
-    width: 250px;
+    width: 90%;
+    height: 270px;
 }
 
 #newArrival > div > div > img + p {
     width: 250px;
-    margin-left: 25px;
     letter-spacing: 2px;
+    margin: auto;
 }
 
 #newArrival > div > div > img + p + p {
-    font-size: 15px
+    font-size: 15px;
 }
 
 #save {
@@ -373,7 +378,6 @@
 #trend {
     width: 100%;
     text-align: center;
-    height: 630px;
 }
 
 #trend > h1 {
@@ -391,25 +395,29 @@
 }
 
 #trend > div {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
     width: 80%;
-    display: flex;
     margin: auto;
     margin-top: 30px;
-    gap: 50px;
+    margin-bottom: 30px;
+    gap: 1%;
     justify-content: center;
 }
 
 #trend > div > div > img {
-    width: 220px;
+    width: 90%;
+    height: 320px;
 }
 
 #trend > div > div > img + p {
     width: 240px;
+    margin: auto;
     letter-spacing: 2px;
 }
 
 #trend > div > div > img + p + p {
-    font-size: 15px
+    font-size: 15px;
 }
 
 #story {

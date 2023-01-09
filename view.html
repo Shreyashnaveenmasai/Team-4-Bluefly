@@ -12,6 +12,7 @@
     </head>
 
     <body>
+
         <div id="header">
             <div id="navbar">
 
@@ -23,8 +24,8 @@
                     <div>
                         <button style="font-size:20px;  color: rgba(0, 0, 0, 0.598);"><i class="fa fa-search"></i></button>
                         <p style="margin-top: 2px;"> SEARCH </p>
-                        <img src="https://img.icons8.com/ios/512/user.png" alt="account">
-                        <img src="https://img.icons8.com/ios/512/shopping-bag.png" alt="bag">
+                        <img onclick="check()" src="https://img.icons8.com/ios/512/user.png" alt="account">
+                        <img onclick="window.location.href = `./cart.html`" src="https://img.icons8.com/ios/512/shopping-bag.png" alt="bag">
                     </div>
                 </div>
 
@@ -491,10 +492,6 @@
             
         </div>
 
-
-
-
-
         <div id="view">
             <div id="showImage">
                 <!-- append product image here by view.js -->
@@ -511,23 +508,6 @@
                 <p id="informations"> </p>
             </div>
         </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         <div id="footer">
 
@@ -599,4 +579,5 @@
         </div>
     </body>
     <script src="./view.js"> </script>
+    <script src="./homepage.js"></script>
 </html>

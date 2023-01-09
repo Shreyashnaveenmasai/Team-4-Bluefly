@@ -20,7 +20,8 @@ function sin(){
         }
     })
     if(c===1){
-        console.log("password match")
+        localStorage.setItem('login', '1');
+        window.location="homepage.html"
     }else{
         var l=document.createElement('li')
         l.textContent="Incorrect email or password."

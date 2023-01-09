@@ -2,61 +2,70 @@ var data = [
     {   
         qty: 1,
         discount: "Extra 20% off in Cart",
-        image_url:"https://cdn.shopify.com/s/files/1/0248/3473/6191/products/aap9VKrZwOff2EzzMvDWfugXcJhbPyfF-25_large.jpg?v=1669532929",
-        brand:"BCBMAXAZRIA",
-        name: "CROPPED LIQUID PUFFER WOMENS METALLIC CROPPED PUFFER COAT",
-        mrp_price: "260.99",
-        best_price : 92.99,
+        image_url:"https://cdn.shopify.com/s/files/1/0248/3473/6191/products/0ISmEOPSzJC5tosJwCVA4qsYjUhRvOLY-25_large.jpg?v=1669349017",
+        brand:"AQUA",
+        name: "WOMENS SEQUINED LONG EVENING DRESS",
+        mrp_price: "328.99",
+        best_price : 77.99,
     },
     {   
         qty: 1,
         discount: "Extra 12% off in Cart",
-        image_url:"https://cdn.shopify.com/s/files/1/0248/3473/6191/products/83728-83730_b-X3_large.jpg?v=1669794585",
-        brand: "REAL CASHMERE",
-        name:"REAL CASHMERE DARK BLUE HALF ZIP FINE CASHMERE BLEND MENS SWEATER",
-        mrp_price: "89.99",
-        best_price: 29.99,
+        image_url:"https://cdn.shopify.com/s/files/1/0248/3473/6191/products/2Pv8rL4PySjqq6LdRbv706ilwpUg4Rq1-25_large.jpg?v=1670226176",
+        brand: "MAC DUGGAL",
+        name:"WOMENS EMBELLISHED EMBROIDERED EVENING DRESS",
+        mrp_price: "798.99",
+        best_price: 219.99,
     },
     {   
         qty: 1,
         discount: "Extra 10% off in Cart",
-        image_url:"https://cdn.shopify.com/s/files/1/0248/3473/6191/products/4292666_large.jpg?v=1658446282",
-        brand: "MICHAEL MICHAEL KORS",
-        name:"MICHAEL MICHAEL KORS WOMEN'S BONE WHITE DOWN SLEEVELESS PUFFER VEST WITH REMOVABLE HOOD",
-        mrp_price:"219.99",
-        best_price: 119.99,
+        image_url:"https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1411450334_RLLZ_2_large.jpg?v=1669180768",
+        brand: "BGL",
+        name:"BGL DRESS",
+        mrp_price:"754.99",
+        best_price: 299.99,
     },
     {
         qty: 1,
         discount: "Extra 20% off in Cart",
-        image_url:"https://cdn.shopify.com/s/files/1/0248/3473/6191/products/77216-77219_b_zps3t3yr5lr_large.jpg?v=1669660348",
-        brand: "CASHMERE COMPANY",
-        name:"CASHMERE BLEND BEIGE V-NECK SWEATER",
-        mrp_price:"89.99",
-        best_price: 29.99,
+        image_url:"https://cdn.shopify.com/s/files/1/0248/3473/6191/products/Rhmii6YRQnzDh2XpmzLdz8zg7eBx0lcN-25_large.jpg?v=1670179633",
+        brand: "JOVANI",
+        name:"WOMENS PLUNGE MAXI EVENING DRESS",
+        mrp_price:"899.99",
+        best_price: 529.99,
     },
     {   
         qty: 1,
         discount: "Extra 12% off in Cart",
-        image_url:"https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1411538632_RLLZ_2_large.jpg?v=1669914967",
-        brand: "LEA & VIOLA",
-        name:"LEA & VIOLA QUILTED & CROCHETED TEDDY JACKET",
-        mrp_price:"200.99",
+        image_url:"https://cdn.shopify.com/s/files/1/0248/3473/6191/products/sJFCI3x6kkWzUlECZVAgga0d76XcE4kP-25_large.jpg?v=1670121421",
+        brand: "AMSALE",
+        name:"FAILLE WOMENS WOVEN STRAPLESS FIT & FLARE DRESST",
+        mrp_price:"400.99",
+        best_price: 134.99,
+    },
+    {   
+        qty: 1,
+        discount: "Extra 20% off in Cart",
+        image_url:"https://cdn.shopify.com/s/files/1/0248/3473/6191/products/xGFlaFIp4EUN2qqlULr97dnoMJMMuJzP-25_large.jpg?v=1669348986",
+        brand: "AQUA",
+        name:"WOMENS VELVET LONG EVENING DRESS",
+        mrp_price:"289.99",
+        best_price: 39.99,
+    },
+    {   
+        qty: 1,
+        discount: "Extra 20% off in Cart",
+        image_url:"https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1411202918_RLLZ_2_large.jpg?v=1669914424",
+        brand: "VINCE",
+        name:"VINCE MIXED MEDIA WOOL & CASHMERE-BLEND OPEN-BACK DRESS",
+        mrp_price:"495.99",
         best_price: 134.99,
     },
     {   
         qty: 1,
         discount: "Extra 20% off in Cart",
         image_url:"https://cdn.shopify.com/s/files/1/0248/3473/6191/products/83728-83730_b-X3_large.jpg?v=1669794585",
-        brand: "METTE",
-        name:"REAL CASHMERE DARK BLUE HALF ZIP FINE CASHMERE BLEND MENS SWEATER",
-        mrp_price:"89.99",
-        best_price: 29.99,
-    },
-    {   
-        qty: 1,
-        discount: "Extra 20% off in Cart",
-        image_url:"https://cdn.shopify.com/s/files/1/0248/3473/6191/products/zUZlhFwSUlhmvH5jTeWkFzAbnrsnPwEk-25_large.jpg?v=1669435533",
         brand: "REAL CASHMERE",
         name:"REAL CASHMERE DARK BLUE HALF ZIP FINE CASHMERE BLEND MENS SWEATER",
         mrp_price:"89.99",
@@ -65,45 +74,36 @@ var data = [
     {   
         qty: 1,
         discount: "Extra 20% off in Cart",
-        image_url:"https://cdn.shopify.com/s/files/1/0248/3473/6191/products/83728-83730_b-X3_large.jpg?v=1669794585",
-        brand: "REAL CASHMERE",
-        name:"REAL CASHMERE DARK BLUE HALF ZIP FINE CASHMERE BLEND MENS SWEATER",
-        mrp_price:"89.99",
-        best_price: 134.99,
-    },
-    {   
-        qty: 1,
-        discount: "Extra 20% off in Cart",
-        image_url:"https://cdn.shopify.com/s/files/1/0248/3473/6191/products/4306659_large.jpg?v=1668479383",
-        brand: "TED BAKER",
-        name:"TED BAKER MEN'S HEATHER GRAY DROVERS ZIP FRONT FUNNEL NECK SWEATSHIRT",
+        image_url:"https://cdn.shopify.com/s/files/1/0248/3473/6191/products/86083897._large.jpg?v=1669663215",
+        brand: "AZURA EXCHANGE",
+        name:"AZURA EXCHANGE BLACK ONE-SHOULDER CASCADING SPLIT EVENING PARTY MAXI DRESS",
         mrp_price:"285.99",
         best_price: 165.99,
     },
     {   
         qty: 1,
         discount: "Extra 20% off in Cartt",
-        image_url:"https://cdn.shopify.com/s/files/1/0248/3473/6191/products/RSbCBbwck2NICdJUsxFND7AwvjLiJV4R-25_large.jpg?v=1669422048",
-        brand: "TAHARI",
-        name:"NIKKI WOMENS WOOL BLEND WRAP COAT WOOL COAT",
-        mrp_price:"105.99",
-        best_price: 78.99,
+        image_url:"https://cdn.shopify.com/s/files/1/0248/3473/6191/products/GCd5pFFg79VQamfaDiEEImOJTVwbuOhp-25_large.jpg?v=1669888904",
+        brand: "MAC DUGGAL",
+        name:"WOMENS SEQUINED LONG EVENING DRESS",
+        mrp_price:"559.99",
+        best_price: 289.99,
     },
     {   
         qty: 1,
         discount: "Extra 20% off in Cart",
-        image_url:"https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1925359_large.jpg?v=1654588277",
-        brand: "BARRIERS",
-        name:"BARRIERS ORANGE BOBBY SEALE PULLOVER HOODIE",
+        image_url:"https://cdn.shopify.com/s/files/1/0248/3473/6191/products/57576697_large.jpg?v=1665510754",
+        brand: "AZURA EXCHANGE",
+        name:"AZURA EXCHANGE GREEN LONG SLEEVE V NECK TWIST FRONT SLIT LONG DRESS",
         mrp_price:"510.99",
         best_price: 285.99,
     },
     {   
         qty: 1,
         discount: "Extra 20% off in Cart",
-        image_url:"https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1010942624_RLLZ_2_large.jpg?v=1669915059",
-        brand: "AUTUMN CASHMERE",
-        name:"AUTUMN CASHMERE CHECKERED WOOL & CASHMERE-BLEND CREWNECK SWEATERT",
+        image_url:"https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1411821040_RLLZ_2_large.jpg?v=1669995270",
+        brand: "RONNY KOBO",
+        name:"RONNY KOBO BERNADETTE MAXI DRESS",
         mrp_price:"460.99",
         best_price: 203.99,
     },
@@ -129,13 +129,11 @@ function DisplayClothing(data){
         var brandname=document.createElement("div");
         brandname.setAttribute("id","brand");
 
-
         var brand = document.createElement("p");
         brand.innerText = ele.brand;
-        
+
         var name = document.createElement("h4");
         name.innerText = ele.name;
-        brandname.append(name);
         
         var mrp_price = document.createElement("h5");
         sub_mrp = document.createElement("span");
@@ -166,7 +164,7 @@ div.append(
     discount,
     image,
     brand,
-    brandname,
+    name,
     mrp_price,
     best_price,
     
@@ -186,7 +184,7 @@ data.map((elem) => {
 var productIncart = JSON.parse(localStorage.getItem("newcart")) || [];
 console.log(productIncart);
 var cartdata = [];
-function addcart(element,i) {
+function addcart(element) {
     cartdata.push(element);
     localStorage.setItem("prodList", JSON.stringify(cartdata));
   if (productIncart.length == 0) {
@@ -223,55 +221,26 @@ function addToCart(index){
   localStorage.setItem("cartproduct",JSON.stringify(productincart))
 }
 function HighToLow() {
-
     console.log("hightolow")
       data.sort(function (x, y) {
-        if(x.best_price < y.best_price) return 1;
-              if(x.best_price > y.best_price) return -1;
-              return 0;
-          // console.log(parseInt(x.best_price.slice(4,)) + " " + typeof parseInt(x.best_price.slice(4,)))
-          // return parseInt(y.best_price.slice(4,)) - parseInt(x.best_price.slice(4,));
+          console.log(parseInt(x.best_price.slice(4,)) + " " + typeof parseInt(x.best_price.slice(4,)))
+          return parseInt(y.best_price.slice(4,)) - parseInt(x.best_price.slice(4,));
       });
-      DisplayClothing(data);
+      DisplayDressing(data);
   }
-  // document.querySelector("#sbn").addEventListener("change",sbn);
-  // function sbn(){
-  //   event.preventDefault();
-  //   if(document.querySelector("#sbn").value=="lth" || document.querySelector("#sbn").value==""){
-  //     a.sort(function(a,b){
-  //       if(a.name < b.name) return -1;
-  //       if(a.name > b.name) return 1;
-  //       return 0;
-  //     })
-  //   }
-  //   if(document.querySelector("#sbn").value=="htl"){
-  //     a.sort(function(a,b){
-  //       if(a.name < b.name) return 1;
-  //       if(a.name > b.name) return -1;
-  //       return 0;
-  //     })
-  //   }
-  //   display(a);
-  // }
   function LowToHigh() {
       data.sort(function (x, y) {
-        if(x.best_price < y.best_price) return -1;
-        if(x.best_price > y.best_price) return 1;
-        return 0;
-          // console.log(parseInt(x.best_price.slice(4,)) + " " + typeof parseInt(x.best_price.slice(4,)))
-          // return parseInt(x.best_price.slice(4,)) - parseInt(y.best_price.slice(4,));
+          console.log(parseInt(x.best_price.slice(4,)) + " " + typeof parseInt(x.best_price.slice(4,)))
+          return parseInt(x.best_price.slice(4,)) - parseInt(y.best_price.slice(4,));
       });
-      DisplayClothing(data);
+      DisplayDressing(data);
   }
   function sortByDiscount() {
       data.sort(function (x, y) {
-        if(x.discount < y.discount) return -1;
-              if(x.discount > y.discount) return 1;
-              return 0;
-          // console.log(parseInt(x.discount.slice(0, 2)) + " " + typeof parseInt(x.best_price.slice(4,)))
-          // return parseInt(y.discount.slice(0, 2)) - parseInt(x.discount.slice(0, 2));
+          console.log(parseInt(x.discount.slice(0, 2)) + " " + typeof parseInt(x.best_price.slice(4,)))
+          return parseInt(y.discount.slice(0, 2)) - parseInt(x.discount.slice(0, 2));
       });
-      DisplayClothing(data);
+      DisplayDressing(data);
   }
   console.log(clothing);
   var a=b=c=d=e=f=g=h=0; var count1=0;
@@ -373,11 +342,11 @@ function abc1(){
        if(ele.brand=="AUTUMN CASHMERE"){
 
         w.push(ele);
-         DisplayClothing(w);
+         DisplayDressing(w);
        }
      })
    }else{
-     DisplayClothing(data);
+     DisplayDressing(data);
    }
   }
 function abc2(){
@@ -386,11 +355,11 @@ function abc2(){
      data.map(function(ele){
         if(ele.brand=="TAHARI"){
           x.push(ele);
-          DisplayClothing(x);
+          DisplayDressing(x);
         }
       })
     }else{
-      DisplayClothing(data);
+      DisplayDressing(data);
     }
    }
 function abc3(){
@@ -399,11 +368,11 @@ function abc3(){
      data.map(function(ele){
         if(ele.brand=="TED BAKER"){
           y.push(ele);
-          DisplayClothing(y);
+          DisplayDressing(y);
         }
       })
     }else{
-      DisplayClothing(data);
+      DisplayDressing(data);
     }
    }
 function abc4(){
@@ -412,11 +381,11 @@ function abc4(){
       data.map(function(ele){
         if(ele.brand=="REAL CASHMERE"){
           z.push(ele);
-          DisplayClothing(z);
+          DisplayDressing(z);
         }
       })
     }else{
-      DisplayClothing(data);
+      DisplayDressing(data);
     }
    }
 //--------------------- End of CheckBox Brand----------------------------
@@ -427,11 +396,11 @@ function abc5(){
       data.map(function(ele){
         if(ele.brand=="Women's Dresses"){
           w.push(ele);
-          DisplayClothing(w);
+          DisplayDressing(w);
         }
       })
     }else{
-      DisplayClothing(data);
+      DisplayDressing(data);
     }
    }
 
@@ -441,11 +410,11 @@ function abc6(){
       data.map(function(ele){
         if(ele.brand=="Women's Tops"){
           z.push(ele);
-          DisplayClothing(z);
+          DisplayDressing(z);
         }
       })
     }else{
-      DisplayClothing(data);
+      DisplayDressing(data);
     }
    }
 
@@ -455,11 +424,11 @@ function abc7(){
       data.map(function(ele){
         if(ele.brand=="Women's Pants"){
           z.push(ele);
-          DisplayClothing(z);
+          DisplayDressing(z);
         }
       })
     }else{
-      DisplayClothing(data);
+      DisplayDressing(data);
     }
    }
 
@@ -469,11 +438,11 @@ function abc8(){
       data.map(function(ele){
         if(ele.brand=="Men's Suits"){
           z.push(ele);
-          DisplayClothing(z);
+          DisplayDressing(z);
         }
       })
     }else{
-      DisplayClothing(data);
+      DisplayDressing(data);
     }
    }
 
@@ -530,4 +499,3 @@ function abc8(){
       }
     }
   };
- 

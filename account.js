@@ -1,7 +1,7 @@
 document.querySelector('#btn').addEventListener('click', fetch_data)
 var arr=JSON.parse(localStorage.getItem('fetchdata')) || [];
 function fetch_data(){
-    // event.preventDefault();
+    event.preventDefault();
     var obj={
         name:document.querySelector('#name').value,
         lname:document.querySelector('#lname').value,
@@ -10,4 +10,6 @@ function fetch_data(){
     };
     arr.push(obj);
     localStorage.setItem('fetchdata', JSON.stringify(arr))
+    console.log("hii")
+    window.location="login.html"
 }

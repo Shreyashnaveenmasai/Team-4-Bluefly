@@ -1,188 +1,298 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="//cdn.shopify.com/s/files/1/0248/3473/6191/files/bluefly_ico_new_32x32.png?v=1571412434" type="image/png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="//cdn.shopify.com/s/files/1/0248/3473/6191/files/bluefly_ico_new_32x32.png?v=1571412434"
+      type="image/png"
+    />
     <title>Payment - Bluefly - Checkout</title>
-    <link rel="stylesheet" href="payment.css">
-</head>
-<body>
+    <link rel="stylesheet" href="payment.css" />
+  </head>
+  <body>
     <div id="full">
-        <div id="right">
-            <a href="">
-                <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/BLUEFLY-LOGO-11-20.png?223864" alt="">
-            </a>
-            <div id="items">
-                <a href="./cart.html">Cart</a>
-                <p>></p>
-                <a href="./information.html"><p>Information</p></a>
-                <p>></p>
-                <a href="./shipping.html"><p>Shipping</p></a>
-                <p>></p>
-                <p>Payment</p>
-            </div>
-            <div id="contact">
-                <div id="ssemail">
-                    <div>Contact</div>
-                    <div>
-                        <span id="semail"></span>
-                    </div>
-                    <div>
-                        <a href="information.html">Change</a>
-                    </div>
-                </div>
-                <div><hr></div>
-                <div id="ssdata">
-                    <div>Ship to</div>
-                    <div>
-                        <span id="sdata"></span>
-                    </div>
-                    <div>
-                        <a href="information.html">Change</a>
-                    </div>
-                </div>
-                <div><hr></div>
-                <div id="fee">
-                    <div>Method</div>
-                    <div>
-                        <span id="fdata"></span>
-                    </div>
-                    <div>
-                        <a href="shipping.html">Change</a>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <h2 class="h2">
-                   Payment
-                </h2>
-                <h3 class="h3">
-                    All transactions are secure and encrypted.
-                </h3>
-            </div>
-            <div id="payments">
-                <div id="between">
-                    <div class="option" data-value="credit-card">
-                        <div class="inner-circle"></div>
-                        Credit Card
-                    </div>
-                    <img src="https://library.kissclipart.com/20181007/sce/kissclipart-paypal-visa-mastercard-american-express-discover-c-dc202c06b5ad0879.png" alt="" width="30%" height="50%">
-                        and more…
-                </div>
-                
-                <div id="credit">
-                    <input type="number" class="inputField" id="card-number" placeholder="Card Number" name="card-number" pattern="[0-9]{16}">
-                    <input type="text" class="inputField" id="name" name="name" required pattern="[A-Za-z]{3,}" title="Please enter a valid Name (at least 3 letters)" placeholder="Name on card">
-                    <div id="exp">
-                        <input type="number" class="inputField" placeholder="Expiration date (MM / YY)" id="expiry-date" name="expiry-date" pattern="[0-9]{4}">
-                        <input type="number" class="inputField" placeholder="Security code" id="cvv" name="cvv" pattern="[0-9]{3}">
-                    </div>
-                </div>
-                <div id="paypal">
-                    <div class="option" data-value="paypal">
-                        <div class="inner-circle"></div>
-                        <img src="https://cdn.shopify.com/shopifycloud/shopify/assets/checkout/offsite-gateway-logos/paypal@2x-768388b0667bef1aa9a7cf02fa1cc2184c2915a90d4cdd62dde223f74f2acbfc.png"  alt="paypal">
-                    </div>
-                    <div id="paypal-opt" style="display: none;">
-                        <img src="https://cdn.shopify.com/shopifycloud/shopify/assets/checkout_2021-01-25/offsite-small-0d8fd34431b27358e5c54a5ad660f76f8d628fad88320450d799287a8654982f.svg" alt="">
-                        <p>After clicking “Complete order”, you will be redirected to PayPal to complete your purchase securely.</p>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <h2 class="h2">
-                    Billing address
-                </h2>
-                <h3 class="h3">
-                    Select the address that matches your card or payment method.
-                </h3>
-            </div>
-            <div class="shipping-options">
-                <div class="option standard active" data-value="standard"> 
-                  <div>
-                    <div class="inner-circle"></div>
-                    <p>	Same as shipping address</p> 
-                  </div>
-                </div>
-                <div class="option expedited" data-value="expedited">
-                    <div>
-                        <div class="inner-circle"></div>
-                        <p>	Use a different billing address</p>
-                    </div>
-                </div>
-                <div id="adres" style="display: none;">
-                    <select id="country" name="country" required>
-                        <option value="US">Country/region</option>
-                        <option value="IN">India</option>
-                        <option value="US">United States</option>
-                    </select>
-                    <div id="names">
-                        <input type="text" id="fname" name="name" required pattern="[A-Za-z]{3,}" title="Please enter a valid First name (at least 3 letters)" placeholder="First name">
-                        <input type="text" id="lname" name="name" required pattern="[A-Za-z]{3,}" title="Please enter a valid Last name (at least 3 letters)" placeholder="Last name">
-                    </div>
-                    <label for="housing">Add a house number if you have one</label>
-                    <input type="text" id="aname" name="address" placeholder="Apartment, suite, etc. (optional)" required pattern="[A-Za-z]{3,}" title="Please enter a valid Address (at least 3 letters)" >
-                    <div id="cities">
-                        <input type="text" id="city" name="city"  required pattern="[A-Za-z]{3,}" title="Please enter a valid City (at least 3 letters)" placeholder="City">
-                        <select id="state" name="state" required>
-                            <option value="">State</option>
-                            <option value="AL">Alabama</option>
-                            <option value="AK">Alaska</option>
-                            <option value="AZ">Arizona</option>
-                            <option value="AR">Arkansas</option>
-                            <option value="CA">California</option>
-                            <option value="CO">Colorado</option>
-                            <option value="CT">Connecticut</option>
-                            <option value="DE">Delaware</option>
-                            <option value="DC">District of Columbia</option>
-                            <option value="FL">Florida</option>
-                            <option value="GA">Georgia</option>
-                            <option value="HI">Hawaii</option>
-                            <option value="ID">Idaho</option>
-                            <option value="IL">Illinois</option>
-                            <option value="IN">Indiana</option>
-                            <option value="IA">Iowa</option>
-                            <option value="KS">Kansas</option>
-                            <option value="KY">Kentucky</option>
-                            <option value="LA">Louisiana</option>
-                        </select>
-                        <input type="number" id="zip" name="zip"  title="Please enter a Zip Code (at least 3 digit)" placeholder="Zip Code">
-                    </div>
-                    <input type="number" id="telp" name="quantity"   placeholder="Phone"  title="Please enter a number">
-                </div>
-            </div>
-            <div>
-                <h3>Remember me</h3>
-            </div>
-            <div id="check">
-                <label for="sms" id="checkbox">
-                    <div><input type="checkbox" id="sms" name="sms"></div>
-                    <div><p>Save my information for a faster checkout</p></div>
-                </label>
-                <div id="phone-number-container" style="display: none;">
-                    <input type="tel" id="phone" placeholder="Mobile Phone Number" name="phone">
-                    <p>Next time you check out here or on other stores powered by Shopify, you’ll receive a code by text message to securely purchase with Shop Pay.</p>
-                </div>
-            </div>
-            <div id="sub">
-                <a href="shipping.html"> < Return to shipping</a>
-                <input type="submit" onclick="pay()" value="Pay now">
-            </div>
-            <footer>
-                <a id="terms-of-policy-link" href="https://www.bluefly.com/24834736191/policies/refund-policy.html?locale=en-US">Refund policy</a>
-                <a href="https://www.bluefly.com/24834736191/policies/shipping-policy.html?locale=en-US">Shipping policy</a>
-                <a href="https://www.bluefly.com/24834736191/policies/privacy-policy.html?locale=en-US">Privacy policy</a>
-                <a href="https://www.bluefly.com/24834736191/policies/terms-of-service.html?locale=en-US">Terms of service</a>
-            </footer>
+      <div id="right">
+        <a href="">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/BLUEFLY-LOGO-11-20.png?223864"
+            alt=""
+          />
+        </a>
+        <div id="items">
+          <a href="./cart.html">Cart</a>
+          <p>></p>
+          <a href="./information.html"><p>Information</p></a>
+          <p>></p>
+          <a href="./shipping.html"><p>Shipping</p></a>
+          <p>></p>
+          <p>Payment</p>
         </div>
-        <hr>
-        <div id="left">
-            <div id="parent">
+        <div id="contact">
+          <div id="ssemail">
+            <div>Contact</div>
+            <div>
+              <span id="semail"></span>
             </div>
+            <div>
+              <a href="information.html">Change</a>
+            </div>
+          </div>
+          <div><hr /></div>
+          <div id="ssdata">
+            <div>Ship to</div>
+            <div>
+              <span id="sdata"></span>
+            </div>
+            <div>
+              <a href="information.html">Change</a>
+            </div>
+          </div>
+          <div><hr /></div>
+          <div id="fee">
+            <div>Method</div>
+            <div>
+              <span id="fdata"></span>
+            </div>
+            <div>
+              <a href="shipping.html">Change</a>
+            </div>
+          </div>
         </div>
+        <div>
+          <h2 class="h2">Payment</h2>
+          <h3 class="h3">All transactions are secure and encrypted.</h3>
+        </div>
+        <div id="payments">
+          <div id="between">
+            <div class="option" data-value="credit-card">
+              <div class="inner-circle"></div>
+              Credit Card
+            </div>
+            <img
+              src="https://library.kissclipart.com/20181007/sce/kissclipart-paypal-visa-mastercard-american-express-discover-c-dc202c06b5ad0879.png"
+              alt=""
+              width="30%"
+              height="50%"
+            />
+            and more…
+          </div>
+
+          <div id="credit">
+            <input
+              type="number"
+              class="inputField"
+              id="card-number"
+              placeholder="Card Number"
+              name="card-number"
+              pattern="[0-9]{16}"
+            />
+            <input
+              type="text"
+              class="inputField"
+              id="name"
+              name="name"
+              required
+              pattern="[A-Za-z]{3,}"
+              title="Please enter a valid Name (at least 3 letters)"
+              placeholder="Name on card"
+            />
+            <div id="exp">
+              <input
+                type="number"
+                class="inputField"
+                placeholder="Expiration date (MM / YY)"
+                id="expiry-date"
+                name="expiry-date"
+                pattern="[0-9]{4}"
+              />
+              <input
+                type="number"
+                class="inputField"
+                placeholder="Security code"
+                id="cvv"
+                name="cvv"
+                pattern="[0-9]{3}"
+              />
+            </div>
+          </div>
+          <div id="paypal">
+            <div class="option" data-value="paypal">
+              <div class="inner-circle"></div>
+              <img
+                src="https://cdn.shopify.com/shopifycloud/shopify/assets/checkout/offsite-gateway-logos/paypal@2x-768388b0667bef1aa9a7cf02fa1cc2184c2915a90d4cdd62dde223f74f2acbfc.png"
+                alt="paypal"
+              />
+            </div>
+            <div id="paypal-opt" style="display: none">
+              <img
+                src="https://cdn.shopify.com/shopifycloud/shopify/assets/checkout_2021-01-25/offsite-small-0d8fd34431b27358e5c54a5ad660f76f8d628fad88320450d799287a8654982f.svg"
+                alt=""
+              />
+              <p>
+                After clicking “Complete order”, you will be redirected to
+                PayPal to complete your purchase securely.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h2 class="h2">Billing address</h2>
+          <h3 class="h3">
+            Select the address that matches your card or payment method.
+          </h3>
+        </div>
+        <div class="shipping-options">
+          <div class="option standard active" data-value="standard">
+            <div>
+              <div class="inner-circle"></div>
+              <p>Same as shipping address</p>
+            </div>
+          </div>
+          <div class="option expedited" data-value="expedited">
+            <div>
+              <div class="inner-circle"></div>
+              <p>Use a different billing address</p>
+            </div>
+          </div>
+          <div id="adres" style="display: none">
+            <select id="country" name="country" required>
+              <option value="US">Country/region</option>
+              <option value="IN">India</option>
+              <option value="US">United States</option>
+            </select>
+            <div id="names">
+              <input
+                type="text"
+                id="fname"
+                name="name"
+                required
+                pattern="[A-Za-z]{3,}"
+                title="Please enter a valid First name (at least 3 letters)"
+                placeholder="First name"
+              />
+              <input
+                type="text"
+                id="lname"
+                name="name"
+                required
+                pattern="[A-Za-z]{3,}"
+                title="Please enter a valid Last name (at least 3 letters)"
+                placeholder="Last name"
+              />
+            </div>
+            <label for="housing">Add a house number if you have one</label>
+            <input
+              type="text"
+              id="aname"
+              name="address"
+              placeholder="Apartment, suite, etc. (optional)"
+              required
+              pattern="[A-Za-z]{3,}"
+              title="Please enter a valid Address (at least 3 letters)"
+            />
+            <div id="cities">
+              <input
+                type="text"
+                id="city"
+                name="city"
+                required
+                pattern="[A-Za-z]{3,}"
+                title="Please enter a valid City (at least 3 letters)"
+                placeholder="City"
+              />
+              <select id="state" name="state" required>
+                <option value="">State</option>
+                <option value="AL">Alabama</option>
+                <option value="AK">Alaska</option>
+                <option value="AZ">Arizona</option>
+                <option value="AR">Arkansas</option>
+                <option value="CA">California</option>
+                <option value="CO">Colorado</option>
+                <option value="CT">Connecticut</option>
+                <option value="DE">Delaware</option>
+                <option value="DC">District of Columbia</option>
+                <option value="FL">Florida</option>
+                <option value="GA">Georgia</option>
+                <option value="HI">Hawaii</option>
+                <option value="ID">Idaho</option>
+                <option value="IL">Illinois</option>
+                <option value="IN">Indiana</option>
+                <option value="IA">Iowa</option>
+                <option value="KS">Kansas</option>
+                <option value="KY">Kentucky</option>
+                <option value="LA">Louisiana</option>
+              </select>
+              <input
+                type="number"
+                id="zip"
+                name="zip"
+                title="Please enter a Zip Code (at least 3 digit)"
+                placeholder="Zip Code"
+              />
+            </div>
+            <input
+              type="number"
+              id="telp"
+              name="quantity"
+              placeholder="Phone"
+              title="Please enter a number"
+            />
+          </div>
+        </div>
+        <div>
+          <h3>Remember me</h3>
+        </div>
+        <div id="check">
+          <label for="sms" id="checkbox">
+            <div><input type="checkbox" id="sms" name="sms" /></div>
+            <div><p>Save my information for a faster checkout</p></div>
+          </label>
+          <div id="phone-number-container" style="display: none">
+            <input
+              type="tel"
+              id="phone"
+              placeholder="Mobile Phone Number"
+              name="phone"
+            />
+            <p>
+              Next time you check out here or on other stores powered by
+              Shopify, you’ll receive a code by text message to securely
+              purchase with Shop Pay.
+            </p>
+          </div>
+        </div>
+        <div id="sub">
+          <a href="shipping.html"> < Return to shipping</a>
+          <input type="submit" onclick="pay()" value="Pay now" />
+        </div>
+        <footer>
+          <a
+            id="terms-of-policy-link"
+            href="https://www.bluefly.com/24834736191/policies/refund-policy.html?locale=en-US"
+            >Refund policy</a
+          >
+          <a
+            href="https://www.bluefly.com/24834736191/policies/shipping-policy.html?locale=en-US"
+            >Shipping policy</a
+          >
+          <a
+            href="https://www.bluefly.com/24834736191/policies/privacy-policy.html?locale=en-US"
+            >Privacy policy</a
+          >
+          <a
+            href="https://www.bluefly.com/24834736191/policies/terms-of-service.html?locale=en-US"
+            >Terms of service</a
+          >
+        </footer>
+      </div>
+      <hr />
+      <div id="left">
+        <div id="parent"></div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
 <script src="payment.js"></script>

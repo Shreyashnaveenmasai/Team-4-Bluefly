@@ -6,15 +6,15 @@
         margin-left: auto;
     }
 
-    #navbar > #mid {
+    /* #navbar > #mid {
         width: 80%;
-    }
+    } */
 
-    #mid > div > p {
+    /* #mid > div > p {
         font-size: 9px;
         letter-spacing: 1px;
         text-align: center!important;
-    }
+    } */
 
     #catagory > div {
         grid-template-columns: repeat(2,1fr);
@@ -45,14 +45,14 @@
         margin-left: auto;
     }
 
-    #navbar > #mid {
+    /* #navbar > #mid {
         width: 90%;
     }
 
     #mid > div > p {
         font-size: 5px;
         letter-spacing: 0px;
-    }
+    } */
 
     #catagory > div {
         grid-template-columns: repeat(1,1fr);
